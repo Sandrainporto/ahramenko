@@ -1,12 +1,11 @@
-import React from 'react';
-
 import './App.css';
 import { slides } from './utils/sliderImages';
-import MainSlider from './components/MainSlider/MainSlider';
+import Slider from './components/Slider/Slider';
+
 const App = () => {
   return (
     <div className="wrapper">
-      <MainSlider slides={slides} />
+      <Slider slides={slides} />
     </div>
   );
 };
