@@ -1,11 +1,19 @@
-import styles from './App.module.css';
-import Slider from '../widgets/Slider/Slider';
+// import styles from './App.module.scss';
+// import Slider from '../widgets/Slider/Slider';
+import Header from '../widgets/Header/Header';
+import { Routes, Route } from 'react-router-dom';
+import Main from '../pages/Main/Main';
+import Error from '../pages/Error/Error';
 
 const App = () => {
   return (
-    <div className={styles.wrapper}>
-      <Slider />
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </>
   );
 };
 

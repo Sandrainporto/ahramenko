@@ -12,7 +12,6 @@ export type SlideTypes = {
 };
 
 const Slider = () => {
-  
   const slides: SlideTypes[] = [
     { title: 'Beach', url: './../../../public/image-1.jpg' },
     { title: 'Beach2', url: './../../../public/image-2.jpg' },
