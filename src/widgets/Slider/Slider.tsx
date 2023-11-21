@@ -2,7 +2,7 @@ import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import styles from './Slider.module.css';
+import styles from './Slider.module.scss';
 
 SwiperCore.use([Navigation, Autoplay, EffectFade]);
 
