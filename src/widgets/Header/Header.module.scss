@@ -1,3 +1,6 @@
+@import './../../shared/styles/abstract/mixins';
+@import './../../shared/styles/abstract/constants';
+
 .header {
   position: absolute;
   width: 100%;
@@ -15,8 +18,9 @@
     font-family:
       Libre Baskerville,
       sans-serif;
-    font-size: 2rem;
-    color: white;
+    color: $header-text;
+    @include font($size: 2rem, $height: 3.6rem, $weight: normal);
+    @include adaptive-font(20, 10);
   }
 }
 .navigation {
