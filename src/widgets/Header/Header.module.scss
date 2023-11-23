@@ -1,5 +1,4 @@
-@import './../../shared/styles/abstract/mixins';
-@import './../../shared/styles/abstract/constants';
+@import './../../shared/styles/helpers';
 
 .header {
   position: absolute;
@@ -15,9 +14,7 @@
   align-items: center;
   padding: 6rem 2rem;
   a {
-    font-family:
-      Libre Baskerville,
-      sans-serif;
+    @extend %font-add;
     color: $header-text;
     @include font($size: 2rem, $height: 3.6rem, $weight: normal);
     @include adaptive-font(20, 10);

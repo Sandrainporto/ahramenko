@@ -1,0 +1,16 @@
+@import './../../shared/styles/helpers';
+:root {
+  --swiper-theme-color: #ffffffcc;
+}
+
+.slide {
+  width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: $color-slider;
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}

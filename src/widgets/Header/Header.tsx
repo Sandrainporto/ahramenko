@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div className={styles.navigation}>
+        <nav className={styles.navigation}>
           <ul className={styles.navigation_list}>
             {LeftNavigation.map((link) => (
               <li key={link.title}>
@@ -32,13 +32,13 @@ const Header = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
         <div className={styles.logo}>
           <NavLink to="/" className={styles.link}>
             <img src={logo} alt="website-logo" />
           </NavLink>
         </div>
-        <div className={styles.navigation}>
+        <nav className={styles.navigation}>
           <ul className={styles.navigation_list}>
             {RightNavigation.map((link) => (
               <li key={link.title}>
@@ -48,7 +48,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   );

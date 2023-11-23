@@ -3,7 +3,7 @@
 import Header from '../widgets/Header/Header';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Main from '../pages/Main/Main';
-// import Error from '../pages/Error/Error';
+import Error from '../pages/Error/Error';
 
 const App = () => {
   return (
@@ -11,6 +11,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/contacts" element={<Error />} />
+
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>

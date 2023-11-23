@@ -2,7 +2,7 @@ import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
-import styles from './Slider.module.scss';
+import './Slider.scss';
 
 SwiperCore.use([Navigation, Autoplay, EffectFade]);
 
@@ -34,7 +34,7 @@ const Slider = () => {
         <SwiperSlide key={index}>
           <img
             key={slide.title}
-            className={styles.slide}
+            className="slide"
             src={slide.url}
             alt={slide.title}
           />
