@@ -1,0 +1,121 @@
+// Constants
+
+$header-text: white;
+$color-text: rgb(110, 110, 110);
+$color-link: white;
+
+$color-background: rgb(255, 255, 255);
+$color-background-add: #faf7f6;
+$color-slider: rgba(255, 255, 255, 0.918);
+
+$color-selection: #fbe5c9;
+$color-selection-links: #fbe5c94d;
+
+$color-additional: #ff7549;
+$color-tag: #f5f5f5;
+$color-heading: #2f281e;
+$color-border: #d7d7d7;
+$color-hovered: #bcd0e5;
+$color-light: #ffffff;
+$color-hamburger: #173a56;
+$color-overlay: rgba(80, 80, 80, 0.4);
+
+$color-violet: #7752be;
+$color-yellow: #fab005;
+$color-red: #f03e3d;
+$color-blue: #4dadf7;
+
+$content-width: 1550px;
+$tablet-width: 768px;
+$mobile-big-width: 414px;
+$mobile-small-width: 320px;
+
+// Placeholders
+
+%transition {
+  transition: all 0.3s ease-out;
+}
+
+%font-prim {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+%font-add {
+  font-family:
+    Libre Baskerville,
+    sans-serif;
+}
+
+%custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-violet;
+    border-radius: 10px;
+  }
+}
+
+// Mixins
+@mixin font($size, $height: $size, $weight: bold, $style: normal) {
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+$maxWidth: 1920;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $addSize + $addSize * 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
+    );
+  }
+
+  @media (min-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+@mixin columns($width) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > * {
+    flex-basis: $width;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile-small {
+  @media (max-width: $mobile-small-width) {
+    @content;
+  }
+}

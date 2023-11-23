@@ -1,0 +1,64 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend %font-prim;
+  @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+}
+
+h1 {
+  @extend%font-add;
+  @include font($height: 5.4rem, $size: 4.4rem);
+  @include media-mobile {
+    @include font($height: 4.2rem, $size: 3.2rem);
+  }
+}
+
+h2 {
+  @extend%font-add;
+  @include font(3.4rem, 4.6rem);
+  @include adaptive-font(34, 20);
+  text-transform: uppercase;
+
+  // @include media-mobile {
+  //   @include font($height: 3.3rem, $size: 2.4rem);
+  // }
+}
+
+h3 {
+  @extend%font-add;
+  @include font(2.7rem, 3.9rem);
+  @include adaptive-font(27, 20);
+  font-family: 'Lobster', sans-serif;
+
+  @include media-mobile {
+    @include font($height: 3.1rem, $size: 2.1rem);
+  }
+}
+
+h4 {
+  @include font(2.2rem, 3rem, 600);
+  @include media-tablet {
+    @include font($height: 3rem, $size: 2rem);
+  }
+}
+
+h5 {
+  @include font(1.6rem, 2.6rem);
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+* ::selection {
+  color: $color-text;
+  background: $color-selection;
+}
+a::selection {
+  color: inherit;
+  background: $color-selection-links;
+}
