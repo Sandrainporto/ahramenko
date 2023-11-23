@@ -3,22 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import './Slider.scss';
+import { slides } from './SliderImages';
 
 SwiperCore.use([Navigation, Autoplay, EffectFade]);
 
-export type SlideTypes = {
-  title: string;
-  url: string;
-};
 
 const Slider = () => {
-  const slides: SlideTypes[] = [
-    { title: 'Beach', url: './../../../public/image-1.jpg' },
-    { title: 'Beach2', url: './../../../public/image-2.jpg' },
-    { title: 'Beach3', url: './../../../public/image-3.jpg' },
-    { title: 'Beach4', url: './../../../public/image-4.jpg' },
-    { title: 'Beach5', url: './../../../public/image-5.jpg' },
-  ];
+
 
   return (
     <Swiper
