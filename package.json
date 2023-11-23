@@ -1,5 +1,6 @@
 {
   "name": "ahramenko",
+  "homepage": "https://sandrainporto.github.io/ahramenko",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -37,6 +38,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
