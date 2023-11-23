@@ -4,8 +4,6 @@ import styles from './Tiles.module.scss';
 import { tilesData } from './TilesData';
 
 const Tiles = () => {
-  
-
   return (
     <Section classNames="site-map">
       <h2 className={styles.title}>ваши трогательные эмоции в моменте</h2>

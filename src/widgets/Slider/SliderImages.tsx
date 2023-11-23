@@ -4,7 +4,6 @@ import image3 from './../../assets/image-3.jpg';
 import image4 from './../../assets/image-4.jpg';
 import image5 from './../../assets/image-5.jpg';
 
-
 export type SlideTypes = {
   title: string;
   url: string;

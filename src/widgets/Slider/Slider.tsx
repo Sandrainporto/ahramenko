@@ -7,10 +7,7 @@ import { slides } from './SliderImages';
 
 SwiperCore.use([Navigation, Autoplay, EffectFade]);
 
-
 const Slider = () => {
-
-
   return (
     <Swiper
       slidesPerView={1}

@@ -1,14 +1,12 @@
 import colored from './../../assets/tiles/colored.jpg';
 import blackWhite from './../../assets/tiles/black-white.jpg';
 
-
 interface Tiles {
   path: string;
   title: string;
   background: string;
   modifier?: string;
 }
-
 
 export const tilesData: Tiles[] = [
   { path: '/about-me', title: 'Обо мне', background: colored },
