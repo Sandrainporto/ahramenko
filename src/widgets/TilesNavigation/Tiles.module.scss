@@ -1,0 +1,49 @@
+@import './../../shared/styles/helpers';
+
+.title {
+  margin-bottom: 8rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(200px, 450px));
+  grid-template-rows: repeat(2, 250px);
+}
+
+.item {
+  position: relative;
+  transition: all 0.7s ease;
+
+  &:hover {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.9);
+    transition: all 0.7s ease;
+  }
+}
+
+.item_big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.image {
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.image_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $header-text;
+  pointer-events: none;
+}

@@ -1,14 +1,8 @@
 @import './base/fonts';
 @import './base/normalize';
-
-//Abstract
-@import './abstract/constants';
-@import './abstract/placeholders';
-@import './abstract/mixins';
+@import './helpers';
 
 //Base
 @import './base/base';
 @import './base/buttons';
 @import './base/hamburger';
-
-@import './../../widgets/Header/Header.module.scss';

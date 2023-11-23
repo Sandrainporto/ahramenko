@@ -17,14 +17,22 @@ h1 {
 }
 
 h2 {
+  @extend%font-add;
   @include font(3.4rem, 4.6rem);
-  @include media-mobile {
-    @include font($height: 3.3rem, $size: 2.4rem);
-  }
+  @include adaptive-font(34, 20);
+  text-transform: uppercase;
+
+  // @include media-mobile {
+  //   @include font($height: 3.3rem, $size: 2.4rem);
+  // }
 }
 
 h3 {
-  @include font(2.4rem, 3.4rem);
+  @extend%font-add;
+  @include font(2.7rem, 3.9rem);
+  @include adaptive-font(27, 20);
+  font-family: 'Lobster', sans-serif;
+
   @include media-mobile {
     @include font($height: 3.1rem, $size: 2.1rem);
   }
@@ -44,4 +52,13 @@ h5 {
 .block-shadowed {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+}
+
+* ::selection {
+  color: $color-text;
+  background: $color-selection;
+}
+a::selection {
+  color: inherit;
+  background: $color-selection-links;
 }
