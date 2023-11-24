@@ -62,3 +62,8 @@ a::selection {
   color: inherit;
   background: $color-selection-links;
 }
+
+a.active {
+  font-weight: 600;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}

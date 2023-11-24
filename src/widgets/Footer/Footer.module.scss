@@ -1,0 +1,58 @@
+@import './../../shared/styles/helpers';
+.footer {
+  background: $color-background-dark;
+}
+.container {
+  margin: 0 auto;
+  padding: 3.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: $content-width;
+}
+.button {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  background: rgb(251, 229, 201);
+  background: radial-gradient(
+    circle,
+    rgba(251, 229, 201, 1) 0%,
+    rgba(250, 234, 217, 1) 58%
+  );
+  animation: go-up-down 1.7s infinite alternate-reverse;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(16px 16px 20px rgb(255, 255, 255)) invert(95%);
+  }
+  img {
+    height: 70px;
+    width: 140px;
+  }
+}
+
+@keyframes go-up-down {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 10px;
+  }
+}
+
+.contacts {
+  color: $color-text;
+  @extend%font-add;
+  @include font($size: 2rem, $height: 2.8rem, $weight: 600);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: $color-link;
+    text-shadow: rgb(73, 72, 72) 1px 0 10px;
+  }
+}

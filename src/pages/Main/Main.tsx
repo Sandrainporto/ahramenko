@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <>
       <Slider />
-      <div className={styles.wrapper}>
+      <div className={styles.main}>
         <Tiles />
         <Photographer />
       </div>
