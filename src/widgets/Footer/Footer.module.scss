@@ -46,7 +46,8 @@
   }
 }
 
-.contacts {
+.contacts,
+.tel {
   color: $color-text;
   @extend%font-add;
   @include font($size: 2rem, $height: 2.8rem, $weight: 600);
@@ -55,4 +56,7 @@
     color: $color-link;
     text-shadow: rgb(73, 72, 72) 1px 0 10px;
   }
+}
+.tel {
+  font-size: 1.8rem;
 }
