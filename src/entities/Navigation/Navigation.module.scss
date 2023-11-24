@@ -1,0 +1,113 @@
+@import './../../shared/styles/helpers';
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.navigation_list {
+  display: flex;
+  flex: 0 1 30%;
+  justify-content: space-between;
+}
+
+.navigation_link {
+  @extend %font-add;
+  color: $header-text;
+  @include font($size: 2rem, $height: 3.6rem, $weight: normal);
+  @include adaptive-font(20, 10);
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+  }
+}
+
+.navigation_link:after {
+  content: '';
+  display: block;
+  width: 0%;
+  border-bottom: 2.5px solid $header-text;
+}
+
+.navigation_link:hover::after {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  img {
+    max-width: 20rem;
+  }
+
+  &:hover {
+    filter: drop-shadow(16px 16px 20px rgb(255, 255, 255)) invert(95%);
+  }
+}
+
+// Burger
+.navigation_active {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  // height: 100%;
+  background: $color-background-add;
+  padding: 3rem;
+  line-height: 6rem;
+  padding-bottom: 13rem;
+
+  .logo {
+    position: relative;
+    top: 1.8rem;
+    order: 1;
+    align-self: center;
+    filter: drop-shadow(16px 16px 20px rgb(255, 255, 255)) invert(95%);
+    margin-bottom: 1rem;
+  }
+  .navigation_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    li {
+      width: 100%;
+      border-bottom: 1px solid $color-text;
+    }
+  }
+  .navigation_list:first-child {
+    order: 1;
+  }
+
+  .navigation_link {
+    @extend %font-add;
+    color: $color-text;
+    @include font($size: 2.3rem, $height: 4.1rem, $weight: 500);
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+    @include media-mobile {
+      margin-left: 5px;
+    }
+    &:hover {
+      color: $color-text-hover;
+      text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    }
+  }
+  .navigation_link:after {
+    display: none;
+  }
+
+  .navigation_link:hover::after {
+    display: none;
+  }
+}
