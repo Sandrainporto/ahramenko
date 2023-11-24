@@ -19,6 +19,9 @@
   display: none;
 
   @include media-tablet {
+    background: rgba(110, 110, 110, 0.623);
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
     position: fixed;
     top: 2rem;
     right: 3rem;

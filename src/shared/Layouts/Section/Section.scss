@@ -1,6 +1,11 @@
+@import './../../styles/helpers';
+
 .section {
   margin: 6rem auto;
   width: 100%;
+  @include media-laptop-small {
+    margin: 3rem auto;
+  }
 }
 .container {
   display: flex;

@@ -19,7 +19,7 @@ h1 {
 h2 {
   @extend%font-add;
   @include font(3.4rem, 4.6rem);
-  @include adaptive-font(34, 20);
+  @include adaptive-font(34, 18);
   text-transform: uppercase;
 
   // @include media-mobile {
