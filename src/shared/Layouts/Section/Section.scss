@@ -11,5 +11,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem 6rem;
+  @include media-laptop-small {
+    padding: 2rem 3rem;
+
+  }
 }
