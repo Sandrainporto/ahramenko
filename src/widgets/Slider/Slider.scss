@@ -7,6 +7,9 @@
   width: 100vw;
   max-height: 100vh;
   object-fit: cover;
+  @include media-tablet {
+    max-height: 275px;
+  }
 }
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
