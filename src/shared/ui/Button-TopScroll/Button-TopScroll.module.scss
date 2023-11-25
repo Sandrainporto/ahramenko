@@ -1,0 +1,35 @@
+.button {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  background: rgb(251, 229, 201);
+  background: radial-gradient(
+    circle,
+    rgba(251, 229, 201, 1) 0%,
+    rgba(250, 234, 217, 1) 58%
+  );
+  animation: go-up-down 1.7s infinite alternate-reverse;
+  cursor: pointer;
+  &:hover {
+    filter: drop-shadow(16px 16px 20px rgb(255, 255, 255)) invert(95%);
+  }
+  img {
+    height: 70px;
+    width: 140px;
+  }
+}
+
+@keyframes go-up-down {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top: 10px;
+  }
+}

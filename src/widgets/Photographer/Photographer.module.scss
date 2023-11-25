@@ -1,17 +1,36 @@
 @import './../../shared/styles/helpers';
+
 .content {
   background: $color-background-add;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 8rem;
+
+  @include media-laptop-small {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: 1036px) {
+    flex-direction: column;
+
+    padding: 2rem;
+  }
+
+  @include media-mobile {
+    padding: 1rem;
+  }
 }
 
 .photo {
-  flex: 0 1 60%;
+  flex: 0 1 57%;
 
   position: relative;
   height: 550px;
+
+  @include media-laptop-small {
+    flex: 0 1 50%;
+  }
 
   img {
     position: absolute;
@@ -20,8 +39,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @media screen and (max-width: 1036px) {
+      position: static;
+      height: 470px;
+    }
   }
 }
+
 .info {
   flex: 0 1 35%;
   display: flex;
@@ -30,18 +55,43 @@
   justify-content: space-around;
   padding: 3.5rem 2rem;
   background: $color-background;
+
+  @include media-laptop-small {
+    flex: 0 1 45%;
+  }
+
+  @media screen and (max-width: 1036px) {
+    padding: 3.5rem 1rem;
+  }
 }
+
 .description {
   text-align: center;
+
+  @media screen and (max-width: 1036px) {
+    margin-bottom: 2rem;
+  }
 }
+
 .name {
   font-family: 'Lobster', sans-serif;
 
   margin-bottom: 3rem;
   text-transform: capitalize;
 }
+
 .message {
   @include font($size: 1.8rem, $height: 2.8rem, $weight: 400);
   text-align: justify;
   padding: 0 1.5rem;
+  @extend %custom-scroll;
+
+  @include media-laptop-small {
+    margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    max-height: 340px;
+    overflow-y: scroll;
+  }
 }

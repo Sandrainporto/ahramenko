@@ -1,7 +1,7 @@
 @import './../../styles/helpers';
 
 .button-link {
-  background: #fbe5c9;
+  background: $color-button;
   padding: 1rem 3rem;
   color: $color-text;
   @include font($size: 1.8rem, $height: 2.8rem, $weight: 600);
