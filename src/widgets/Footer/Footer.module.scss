@@ -9,6 +9,10 @@
   justify-content: space-around;
   align-items: center;
   max-width: $content-width;
+  @include media-mobile {
+    flex-direction: column;
+    gap: 4rem;
+  }
 }
 .button {
   position: relative;

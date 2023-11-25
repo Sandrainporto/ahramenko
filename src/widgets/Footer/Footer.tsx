@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss';
-import { Link } from 'react-router-dom';
 import logo from './../../assets/logo-dark.png';
+import Icons from '../../entities/Socials/Icons';
 
 const Footer = () => {
   return (
@@ -9,12 +9,8 @@ const Footer = () => {
         <div className={styles.button}>
           <img src={logo} alt="website-logo" />
         </div>
-        <a className={styles.tel} href="tel:+375336253140">
-          +375 (33) 625-31-40
-        </a>
-        <Link to="/contacts" className={styles.contacts}>
-          Контакты
-        </Link>
+
+        <Icons />
       </div>
     </footer>
   );
