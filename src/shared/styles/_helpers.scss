@@ -14,6 +14,9 @@ $color-slider: rgba(255, 255, 255, 0.918);
 $color-selection: #fbe5c9;
 $color-selection-links: #fbe5c94d;
 
+$color-button: #fbe5c9;
+$color-scroll: #fbe5c9;
+
 // $color-additional: #ff7549;
 // $color-tag: #f5f5f5;
 // $color-heading: #2f281e;
@@ -50,20 +53,20 @@ $mobile-small-width: 320px;
     sans-serif;
 }
 
-// %custom-scroll {
-//   &::-webkit-scrollbar {
-//     width: 5px;
-//   }
+%custom-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
 
-//   &::-webkit-scrollbar-track {
-//     box-shadow: inset 0 0 1px grey;
-//   }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+  }
 
-//   &::-webkit-scrollbar-thumb {
-//     background: $color-violet;
-//     border-radius: 10px;
-//   }
-// }
+  &::-webkit-scrollbar-thumb {
+    background: $color-scroll;
+    border-radius: 10px;
+  }
+}
 
 // Mixins
 @mixin font($size, $height: $size, $weight: bold, $style: normal) {

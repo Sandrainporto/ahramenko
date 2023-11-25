@@ -15,4 +15,7 @@
   @include media-laptop-small {
     padding: 2rem 3rem;
   }
+  @include media-mobile {
+    padding: 1rem;
+  }
 }
