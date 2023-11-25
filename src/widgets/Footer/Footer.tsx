@@ -1,14 +1,12 @@
 import styles from './Footer.module.scss';
-import logo from './../../assets/logo-dark.png';
 import Icons from '../../entities/Socials/Icons';
+import ButtonTopScroll from '../../shared/ui/Button-TopScroll/Button-TopScroll';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.button}>
-          <img src={logo} alt="website-logo" />
-        </div>
+        <ButtonTopScroll />
 
         <Icons />
       </div>
