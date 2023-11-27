@@ -10,14 +10,27 @@ interface Props {
 interface NavigationTypes {
   path: string;
   title: string;
+  sublinks?: NavigationTypes[];
 }
 
 const Navigation = ({ state, setState }: Props) => {
   const LeftNavigation: NavigationTypes[] = [
     { path: '/', title: 'Главная' },
-    { path: '/portfolio', title: 'Портфолио' },
-    { path: '/services', title: 'Услуги' },
+    {
+      path: '/portfolio/*',
+      title: 'Портфолио',
+      sublinks: [
+        { path: '/family', title: 'Семейные' },
+        { path: '/love-story', title: 'Love Story' },
+        { path: '/home-sessions', title: 'Домашние' },
+      ],
+    },
+    {
+      path: '/services',
+      title: 'Услуги',
+    },
   ];
+
   const RightNavigation: NavigationTypes[] = [
     { path: '/about-me', title: 'Обо мне' },
     { path: '/testimonials', title: 'Отзывы' },
@@ -28,9 +41,33 @@ const Navigation = ({ state, setState }: Props) => {
       <ul className={styles.navigation_list}>
         {LeftNavigation.map((link) => (
           <li key={link.title} onClick={() => setState(false)}>
-            <NavLink className={styles.navigation_link} to={link.path}>
+            <NavLink
+              className={
+                link.sublinks
+                  ? `${styles.navigation_link} disabled`
+                  : styles.navigation_link
+              }
+              to={link.path}
+            >
               {link.title}
             </NavLink>
+
+            {link.sublinks ? (
+              <ul className={styles.sub_list}>
+                {link.sublinks.map((sublink) => (
+                  <li key={sublink.title} onClick={() => setState(false)}>
+                    <NavLink
+                      className={styles.navigation_link}
+                      to={sublink.path}
+                    >
+                      {sublink.title}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              ''
+            )}
           </li>
         ))}
       </ul>

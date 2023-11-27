@@ -10,15 +10,15 @@ interface Tiles {
 
 export const tilesData: Tiles[] = [
   { path: '/about-me', title: 'Обо мне', background: colored },
-  { path: '/', title: 'Домашние', background: colored },
+  { path: '/home-sessions', title: 'Домашние', background: colored },
   {
-    path: '/portfolio',
+    path: '/love-story',
     title: 'Love Story',
     background: colored,
     modifier: 'item_big',
   },
   {
-    path: '/services',
+    path: '/family',
     title: 'Семейные',
     background: blackWhite,
     modifier: 'item_big',
