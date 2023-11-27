@@ -40,17 +40,7 @@ li {
     pointer-events: all;
   }
 }
-li:has(.sub_list):after {
-  position: absolute;
-  top: 6px;
-  right: -15px;
-  content: '˅';
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: calc(10px + 10 * 100vw / 1920);
-  display: inline;
-  color: white;
-}
+
 .navigation_list > li:hover .sub_list {
   display: flex;
   flex-direction: column;

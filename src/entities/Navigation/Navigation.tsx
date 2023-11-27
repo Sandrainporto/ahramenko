@@ -36,11 +36,22 @@ const Navigation = ({ state, setState }: Props) => {
     { path: '/testimonials', title: 'Отзывы' },
     { path: '/contacts', title: 'Контакты' },
   ];
+  const handleLinkClick = (link: NavigationTypes) => {
+    if (link.title !== 'Портфолио') {
+      setState(false);
+    }
+  };
+
   return (
     <nav className={state ? styles.navigation_active : styles.navigation}>
       <ul className={styles.navigation_list}>
         {LeftNavigation.map((link) => (
-          <li key={link.title} onClick={() => setState(false)}>
+          <li
+            key={link.title}
+            onClick={() => {
+              handleLinkClick(link);
+            }}
+          >
             <NavLink
               className={
                 link.sublinks
