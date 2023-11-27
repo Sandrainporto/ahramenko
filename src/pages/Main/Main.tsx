@@ -7,10 +7,10 @@ const Main = () => {
   return (
     <>
       <Slider />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <Tiles />
         <Photographer />
-      </div>
+      </main>
     </>
   );
 };
