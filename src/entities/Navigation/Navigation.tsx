@@ -1,6 +1,9 @@
 import styles from './Navigation.module.scss';
 import { NavLink } from 'react-router-dom';
 import logo from './../../assets/logo.png';
+import logoDark from './../../assets/logo-dark.png';
+import { useLocation } from 'react-router-dom';
+
 import { Dispatch, SetStateAction } from 'react';
 
 interface Props {
@@ -14,6 +17,9 @@ interface NavigationTypes {
 }
 
 const Navigation = ({ state, setState }: Props) => {
+  const location = useLocation();
+  const isMainPage = location.pathname === '/';
+
   const LeftNavigation: NavigationTypes[] = [
     { path: '/', title: 'Главная' },
     {
@@ -43,7 +49,11 @@ const Navigation = ({ state, setState }: Props) => {
   };
 
   return (
-    <nav className={state ? styles.navigation_active : styles.navigation}>
+    <nav
+      className={
+        state ? styles.navigation + ' ' + styles.active : styles.navigation
+      }
+    >
       <ul className={styles.navigation_list}>
         {LeftNavigation.map((link) => (
           <li
@@ -55,7 +65,7 @@ const Navigation = ({ state, setState }: Props) => {
             <NavLink
               className={
                 link.sublinks
-                  ? `${styles.navigation_link} disabled`
+                  ? styles.navigation_link + ' ' + 'disabled'
                   : styles.navigation_link
               }
               to={link.path}
@@ -85,7 +95,7 @@ const Navigation = ({ state, setState }: Props) => {
 
       <div className={styles.logo}>
         <NavLink to="/" className={styles.link}>
-          <img src={logo} alt="website-logo" />
+          <img src={isMainPage ? logo : logoDark} alt="website-logo" />
         </NavLink>
       </div>
 

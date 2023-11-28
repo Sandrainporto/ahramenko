@@ -20,35 +20,27 @@
   display: none;
 
   @include media-tablet {
-    background: rgba(110, 110, 110, 0.623);
-    padding: 0.7rem 2rem;
-    border-radius: 15px;
     position: fixed;
     top: 2rem;
     right: 3rem;
     z-index: 105;
+    background: rgba(110, 110, 110, 0.623);
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
     display: block;
+    @include font($size: 1.8rem, $height: 2.6rem, $weight: 500);
     color: $color-link;
-    font-weight: 500;
-    font-size: 1.8rem;
-    cursor: pointer;
   }
 }
 
-.burger_active {
-  position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
-  z-index: 105;
+.active {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   background: $color-background-dark;
   text-align: center;
-  padding-top: 1rem;
-  color: $color-link;
+  padding: 1rem 0 0 0;
   font-size: 2rem;
-  cursor: pointer;
   box-shadow:
     rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -62,5 +54,18 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.headerDefault {
+  padding: 5.5rem 0 0;
+  a {
+    color: $color-text;
+  }
+  a:after {
+    content: '';
+    display: block;
+    width: 0%;
+    border-bottom: 2.5px solid $color-text;
   }
 }
