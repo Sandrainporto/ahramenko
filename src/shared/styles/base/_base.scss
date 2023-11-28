@@ -71,3 +71,13 @@ a.active {
 .disabled {
   pointer-events: none;
 }
+
+.main {
+  max-width: $content-width;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
