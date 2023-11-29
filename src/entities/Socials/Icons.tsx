@@ -1,34 +1,44 @@
 import styles from './Icons.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
-const Icons = () => {
+type IconsProps = {
+  textType?: boolean;
+};
+
+const Icons = ({ textType }: IconsProps) => {
   return (
-    <div className={styles.icons}>
-      <a className={styles.icon} href="tel:+375336253140">
-        <img
-          width="30"
-          height="30"
-          src="https://img.icons8.com/glyph-neue/35/6e6e6e/phone.png"
-          alt="phone"
+    <div className={textType ? styles.icons_text : styles.icons}>
+      <a
+        className={textType ? styles.icon_text : styles.icon}
+        href="tel:+375336253140"
+      >
+        <FontAwesomeIcon
+          icon={faPhone}
+          style={{ color: '#6e6e6e', fontSize: '23' }}
         />
+        {textType ? 'Позвонить' : ''}
       </a>
       <a
-        className={styles.icon}
+        className={textType ? styles.icon_text : styles.icon}
         href="https://www.instagram.com/sandraahramenko/"
       >
-        <img
-          width="30"
-          height="30"
-          src="https://img.icons8.com/ios/35/6e6e6e/instagram-new--v1.png"
-          alt="instagram-new--v1"
+        <FontAwesomeIcon
+          icon={faInstagram}
+          style={{ color: '#6e6e6e', fontSize: '28' }}
         />
+        {textType ? 'Instagram' : ''}
       </a>
-      <a className={styles.icon} href="mailto:#&body=Запись на фотосессию">
-        <img
-          width="30"
-          height="30"
-          src="https://img.icons8.com/parakeet-line/48/6e6e6e/new-post.png"
-          alt="new-post"
+      <a
+        className={textType ? styles.icon_text : styles.icon}
+        href="https://t.me/AlBo_9"
+      >
+        <FontAwesomeIcon
+          icon={faTelegram}
+          style={{ color: '#6e6e6e', fontSize: '28' }}
         />
+        {textType ? 'Telegram' : ''}
       </a>
     </div>
   );

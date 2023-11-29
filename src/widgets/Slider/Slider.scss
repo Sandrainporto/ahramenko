@@ -2,15 +2,24 @@
 :root {
   --swiper-theme-color: #ffffffcc;
 }
-
+.swiper {
+  width: 100%;
+}
 .slide {
-  width: 100vw;
+  width: 100%;
   max-height: 100vh;
   object-fit: cover;
   @include media-tablet {
     max-height: 275px;
   }
 }
+.swiper-button-next {
+  right: 3%;
+}
+.swiper-button-prev {
+  left: 3%;
+}
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: $color-slider;

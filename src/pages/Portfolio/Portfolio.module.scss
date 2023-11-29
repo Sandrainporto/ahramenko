@@ -1,0 +1,29 @@
+@import './../../shared/styles/helpers';
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.info {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.title {
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.description {
+  align-self: center;
+  @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
+}
+
+.contacts {
+  margin-bottom: 5rem;
+}
+.socials {
+  margin-top: 5rem;
+}

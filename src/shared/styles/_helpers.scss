@@ -68,6 +68,12 @@ $mobile-small-width: 320px;
   }
 }
 
+%block-zoom {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.9);
+  transition: all 0.7s ease;
+}
 // Mixins
 @mixin font($size, $height: $size, $weight: bold, $style: normal) {
   font-size: $size;

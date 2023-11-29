@@ -32,10 +32,7 @@
   }
 
   &:hover {
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
-    transform: scale(0.9);
-    transition: all 0.7s ease;
+    @extend %block-zoom;
   }
 }
 
