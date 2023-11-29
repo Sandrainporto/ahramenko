@@ -17,7 +17,6 @@ const Gallery = ({
           }
         >
           <img src={image.path} alt={image.name} />
-          <div>{index + `${Math.random() * 1000}`.slice(1, 3)}</div>
         </div>
       ))}
     </div>

@@ -6,6 +6,7 @@ import Error from '../pages/Error/Error';
 import Footer from '../widgets/Footer/Footer.tsx';
 import Portfolio from '../pages/Portfolio/Portfolio.tsx';
 import './App.scss';
+import Services from '../pages/Services/Services.tsx';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/family" element={<Portfolio />} />
           <Route path="/love-story" element={<Portfolio />} />
           <Route path="/home-sessions" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
 
           <Route path="*" element={<Error />} />
         </Routes>
