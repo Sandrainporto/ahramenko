@@ -1,3 +1,15 @@
-.process {
+@import './../../shared/styles/helpers';
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.info {
   text-align: center;
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+.description {
+  @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
 }

@@ -1,0 +1,14 @@
+@import './../../shared/styles/helpers';
+
+.process {
+  text-align: center;
+  padding: 4rem 3rem;
+  background: $color-background-add;
+  h3 {
+    margin-bottom: 4rem;
+  }
+}
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
