@@ -1,0 +1,19 @@
+@import './../../shared/styles/helpers';
+
+.photosession_types {
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.title {
+  margin-bottom: 4rem;
+}
+.description {
+  @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
+}
+.container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}

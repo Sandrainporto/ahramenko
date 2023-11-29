@@ -1,0 +1,39 @@
+@import './../../shared/styles/helpers';
+
+.item {
+  flex: 0 1 33%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+  border-radius: 15px;
+  a {
+    margin: 0 auto;
+    text-transform: none;
+    width: 210px;
+  }
+}
+
+.image {
+  height: 250px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.title {
+  margin: 1.5rem 0;
+}
+.description {
+  margin: 0 auto;
+  width: 90%;
+  text-align: justify;
+  @include font($size: 1.8rem, $height: 3rem, $weight: 300);
+  margin-bottom: 3rem;
+}
