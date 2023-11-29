@@ -29,6 +29,9 @@
 
   &:hover {
     transform: scale(1.1);
+    svg {
+      color: $color-text-hover !important;
+    }
   }
 }
 
@@ -45,5 +48,9 @@
 
   &:hover {
     transform: scale(1.1);
+    color: $color-text-hover;
+    svg {
+      color: $color-text-hover !important;
+    }
   }
 }
