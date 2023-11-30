@@ -5,9 +5,11 @@ import styles from './Portfolio.module.scss';
 import { PortfilioPagesInfo } from './PageData';
 
 const Portfolio = () => {
-  const pageName = window.location.pathname.slice(1);
-  const pageData = PortfilioPagesInfo.find((item) => item.page == pageName)
-    ?.data;
+  const pageUrl = window.location.pathname.split('/');
+  const pageName = pageUrl[pageUrl.length - 1];
+  const pageData = PortfilioPagesInfo.find(
+    (item) => item.page == pageName[pageName.length - 1]
+  )?.data;
 
   return (
     <main className="main">
