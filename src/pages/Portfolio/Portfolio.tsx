@@ -7,9 +7,8 @@ import { PortfilioPagesInfo } from './PageData';
 const Portfolio = () => {
   const pageUrl = window.location.pathname.split('/');
   const pageName = pageUrl[pageUrl.length - 1];
-  const pageData = PortfilioPagesInfo.find(
-    (item) => item.page == pageName[pageName.length - 1]
-  )?.data;
+  const pageData = PortfilioPagesInfo.find((item) => item.page == pageName)
+    ?.data;
 
   return (
     <main className="main">
