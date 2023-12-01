@@ -4,6 +4,15 @@
   padding: 3rem;
   width: 80%;
   background: $color-background;
+  @include media-laptop-small {
+    padding: 1.5rem 3rem;
+  }
+  @include media-tablet {
+    width: 100%;
+  }
+  @include media-mobile {
+    padding: 1.5rem;
+  }
 }
 
 .condition {
@@ -12,6 +21,10 @@
   padding-left: 2.5rem;
 
   @include font($size: 2rem, $height: 2.8rem, $weight: 400);
+  @include adaptive-font(20, 18);
+  @include media-tablet {
+    line-height: 3.1rem;
+  }
   &:before {
     content: url('https://img.icons8.com/officel/16/winter.png');
     position: absolute;

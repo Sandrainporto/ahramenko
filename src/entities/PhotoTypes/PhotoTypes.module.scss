@@ -1,12 +1,17 @@
 @import './../../shared/styles/helpers';
 
 .item {
-  flex: 0 1 33%;
   max-width: 400px;
+
   display: flex;
   flex-direction: column;
   padding: 3rem 1.5rem;
   border-radius: 15px;
+
+  @media screen and (max-width: 929px) {
+    padding: 3rem 1.5rem;
+    max-width: 100%;
+  }
   a {
     margin: 0 auto;
     text-transform: none;
@@ -17,7 +22,9 @@
 .image {
   height: 250px;
   position: relative;
-
+  @include media-laptop-small {
+    height: 350px;
+  }
   img {
     position: absolute;
     top: 0;

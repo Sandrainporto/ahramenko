@@ -1,5 +1,8 @@
 .contacts {
   margin-bottom: 5rem;
+  & > h4 {
+    padding: 0 0.7rem;
+  }
 }
 .socials {
   margin-top: 5rem;
