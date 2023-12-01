@@ -41,7 +41,7 @@ const PhotoTypes = () => {
           <div className={styles.image}>
             <img src={type.background} alt={type.title} />
           </div>
-          <div className={styles.info}>
+          <div className="info">
             <h3 className={styles.title}>{type.title}</h3>
             <p className={styles.description}>{type.description}</p>
           </div>

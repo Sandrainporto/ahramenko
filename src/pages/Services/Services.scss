@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 6rem;
 }
+.content > div:nth-child(even) {
+  padding: 4rem 3rem;
+  background: #f8f2f0;
+}
+
 .info {
   text-align: center;
   h2 {
@@ -12,4 +17,7 @@
 }
 .description {
   @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
+}
+.title {
+  margin-bottom: 3rem;
 }
