@@ -1,0 +1,18 @@
+@import './../../shared/styles/helpers';
+
+.photosession_types {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  @include media-tablet {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

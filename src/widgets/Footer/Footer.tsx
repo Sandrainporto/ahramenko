@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import Icons from '../../entities/Socials/Icons';
+import Icons from '../../entities/SocialIcons/Icons';
 import ButtonTopScroll from '../../shared/ui/Button-TopScroll/Button-TopScroll';
 
 const Footer = () => {

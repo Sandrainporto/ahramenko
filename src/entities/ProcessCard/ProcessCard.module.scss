@@ -1,0 +1,32 @@
+@import './../../shared/styles/helpers';
+.item {
+  // flex: 0 1 23%;
+  // min-width: 275px;
+  width: 300px;
+  padding: 3rem 2rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background: $color-background;
+  border-radius: 15px;
+  @media screen and (max-width: 1388px) {
+    flex: 0 1 47%;
+  }
+  @include media-tablet {
+    flex: 0 1 70%;
+  }
+  @include media-mobile {
+    flex: 0 1 95%;
+  }
+}
+
+.heading {
+  @include font($size: 1.8rem, $height: 3.6rem, $weight: 400);
+  margin: 1.5rem 0;
+}
+.description {
+  text-align: justify;
+  @media screen and (max-width: 1388px) {
+    text-align: center;
+  }
+}
