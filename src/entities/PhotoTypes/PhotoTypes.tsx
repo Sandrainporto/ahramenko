@@ -12,7 +12,7 @@ type Type = {
 export const photoTypes: Type[] = [
   {
     path: '/home-sessions',
-    title: 'Домашние',
+    title: 'Домашняя',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
     background: image,
@@ -26,7 +26,7 @@ export const photoTypes: Type[] = [
   },
   {
     path: '/family',
-    title: 'Семейные',
+    title: 'Семейная',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
     background: image,
@@ -44,6 +44,9 @@ const PhotoTypes = () => {
           <div className="info">
             <h3 className={styles.title}>{type.title}</h3>
             <p className={styles.description}>{type.description}</p>
+            <p className={styles.price}>
+              <strong>Стоимость:</strong> <span>120 руб.</span>
+            </p>
           </div>
 
           <MyButtonLink path={type.path} text="Примеры работ" />

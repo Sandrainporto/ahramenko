@@ -35,5 +35,9 @@
   width: 90%;
   text-align: justify;
   @include font($size: 1.8rem, $height: 3rem, $weight: 300);
-  margin-bottom: 3rem;
+}
+
+.price {
+  margin: 3rem 0;
+  @include font($size: 1.8rem, $height: 3rem, $weight: 400);
 }

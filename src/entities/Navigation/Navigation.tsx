@@ -33,7 +33,7 @@ const Navigation = ({ state, setState }: Props) => {
     },
     {
       path: '/services',
-      title: 'Услуги',
+      title: 'О фотосессии',
     },
   ];
 
