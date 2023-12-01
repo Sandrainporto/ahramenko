@@ -1,0 +1,25 @@
+@import './../../shared/styles/helpers';
+.condition_list {
+  margin: 0 auto;
+  padding: 3rem;
+  width: 80%;
+  background: $color-background;
+}
+
+.condition {
+  text-align: justify;
+  position: relative;
+  padding-left: 2.5rem;
+
+  @include font($size: 2rem, $height: 2.8rem, $weight: 400);
+  &:before {
+    content: url('https://img.icons8.com/officel/16/winter.png');
+    position: absolute;
+    top: 2px;
+    left: 0;
+    padding-right: 1.5rem;
+  }
+}
+.condition:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
