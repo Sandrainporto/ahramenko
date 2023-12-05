@@ -9,20 +9,18 @@ const Services = () => {
   return (
     <main className="main">
       <Section classNames="services">
-        <div className="content">
-          <div className="info">
-            <h2>Услуги</h2>
-            <div className="description">
-              Здесь вы можете получить информацию об условиях фотосессии,
-              пакетах услуг и стоимости
-            </div>
+        <div className="info">
+          <h2 className="heading">Услуги</h2>
+          <div className="description">
+            Здесь вы можете получить информацию об условиях фотосессии, пакетах
+            услуг и стоимости
           </div>
-          <Process />
-          <Photosessions />
-          <Conditions />
-          <Contacts />
         </div>
+        <Process />
       </Section>
+      <Photosessions />
+      <Conditions />
+      <Contacts />
     </main>
   );
 };

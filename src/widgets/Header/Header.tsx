@@ -1,5 +1,6 @@
 import Navigation from '../../entities/Navigation/Navigation';
 import styles from './Header.module.scss';
+import logo from './../../assets/logo-dark.png';
 
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -21,6 +22,7 @@ const Header = () => {
         >
           {burgerState ? '✖' : 'Меню'}
         </div>
+        <img className={styles.logo_tablet} src={logo} alt="logo" />
       </div>
     </header>
   );

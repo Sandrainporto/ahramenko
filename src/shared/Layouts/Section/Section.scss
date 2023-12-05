@@ -1,25 +1,43 @@
 @import './../../styles/helpers';
 
 .section {
-  margin: 6rem auto;
+  padding: 6rem 0 1rem;
   width: 100%;
+  background-color: $color-background;
+  // border: 3px solid yellow;
+
   @include media-laptop-small {
-    margin: 3rem auto;
+    padding: 2rem 0;
   }
   @include media-tablet {
-    margin: 0 auto;
+    padding: 1rem 0;
   }
 }
 .container {
+  max-width: $content-width;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 3rem;
+  // border: 1px solid red;
 
   @include media-tablet {
-    padding: 1rem 2rem;
+    padding: 2rem;
   }
   @include media-mobile {
-    padding: 1rem;
+    padding: 2rem 1rem;
+  }
+  // @include media-tablet {
+  //   padding: 1rem 2rem;
+  // }
+  // @include media-mobile {
+  //   padding: 1rem;
+  // }
+}
+.section:is(.contacts) {
+  padding: 2rem 0;
+  .container {
+    padding: 1rem 3rem;
   }
 }

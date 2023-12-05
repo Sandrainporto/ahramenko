@@ -1,9 +1,18 @@
+@import './../../shared/styles/helpers';
 .contacts {
   margin-bottom: 5rem;
+
   & > h4 {
     padding: 0 0.7rem;
   }
 }
+
+@include media-tablet {
+  .contacts {
+    margin-bottom: 2rem;
+  }
+}
+
 .socials {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }

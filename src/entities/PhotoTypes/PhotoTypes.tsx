@@ -1,5 +1,8 @@
 import styles from './PhotoTypes.module.scss';
-import image from './../../assets/tiles/colored.jpg';
+import homeBckground from './../../assets/tiles/home.webp';
+import loveStoryBackground from './../../assets/tiles/love-story.webp';
+import familyBackground from './../../assets/tiles/contacts.webp';
+
 import MyButtonLink from '../../shared/ui/Button-Link/ButtonLink';
 
 type Type = {
@@ -15,21 +18,21 @@ export const photoTypes: Type[] = [
     title: 'Домашняя',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
-    background: image,
+    background: homeBckground,
   },
   {
     path: '/love-story',
     title: 'Love Story',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
-    background: image,
+    background: loveStoryBackground,
   },
   {
     path: '/family',
     title: 'Семейная',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
-    background: image,
+    background: familyBackground,
   },
 ];
 

@@ -1,3 +1,4 @@
+import Section from '../../shared/Layouts/Section/Section';
 import styles from './Conditions.module.scss';
 
 const Conditions = () => {
@@ -12,8 +13,8 @@ const Conditions = () => {
   ];
 
   return (
-    <div className="conditions">
-      <div className="info">
+    <Section classNames="about-conditions">
+      <div className="conditions">
         <h3 className="title">Условия фотосъемки</h3>
         <div className={styles.condition_list}>
           <ul className="list">
@@ -25,7 +26,7 @@ const Conditions = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
