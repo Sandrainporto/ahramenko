@@ -20,6 +20,12 @@
   left: 3%;
 }
 
+@include media-mobile {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   color: $color-slider;
