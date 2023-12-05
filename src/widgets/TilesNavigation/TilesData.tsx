@@ -1,36 +1,48 @@
-import colored from './../../assets/tiles/colored.jpg';
-import blackWhite from './../../assets/tiles/black-white.jpg';
+import aboutMe from './../../assets/tiles/about-me.webp';
+import loveStory from './../../assets/tiles/love-story.webp';
+import home from './../../assets/tiles/home.webp';
+import contacts from './../../assets/tiles/contacts.webp';
+import testimonials from './../../assets/tiles/testimonials.webp';
+import family from './../../assets/tiles/family.webp';
 
 interface Tiles {
   path: string;
   title: string;
   background: string;
+  positionChanged?: boolean;
+
   modifier?: string;
 }
 
 export const tilesData: Tiles[] = [
-  { path: '/about-me', title: 'Обо мне', background: colored },
-  { path: '/home-sessions', title: 'Домашние', background: colored },
+  {
+    path: '/about-me',
+    title: 'Обо мне',
+    background: aboutMe,
+    positionChanged: true,
+  },
+  { path: '/home-sessions', title: 'Домашние', background: home },
   {
     path: '/love-story',
     title: 'Love Story',
-    background: colored,
+    background: loveStory,
     modifier: 'item_big',
   },
   {
     path: '/family',
     title: 'Семейные',
-    background: blackWhite,
+    background: family,
     modifier: 'item_big',
+    positionChanged: true,
   },
   {
     path: '/testimonials',
     title: 'Отзывы',
-    background: colored,
+    background: testimonials,
   },
   {
     path: '/contacts',
     title: 'Контакты',
-    background: blackWhite,
+    background: contacts,
   },
 ];

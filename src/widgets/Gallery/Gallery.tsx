@@ -7,15 +7,8 @@ const Gallery = ({
 }) => {
   return (
     <div className={styles.gallery}>
-      {images?.map((image, index) => (
-        <div
-          key={index + `${Math.random() * 10000}`.slice(2)}
-          className={
-            image.name == 'Girl'
-              ? styles.item + ' ' + styles.item_big
-              : styles.item
-          }
-        >
+      {images?.map((image) => (
+        <div key={image.name} className={styles.item}>
           <img src={image.path} alt={image.name} />
         </div>
       ))}

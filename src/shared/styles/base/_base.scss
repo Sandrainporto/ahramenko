@@ -6,6 +6,7 @@ html {
 body {
   @extend %font-prim;
   @include font($size: 1.6rem, $height: 2.6rem, $weight: normal);
+  background-color: $color-background;
 }
 
 h1 {
@@ -73,11 +74,25 @@ a.active {
 }
 
 .main {
-  max-width: $content-width;
   width: 100%;
   margin: 0 auto;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
+  // border: 1px solid #000;
+}
+
+.heading {
+  padding: 1.5rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+  @include media-tablet {
+    margin-bottom: 2rem;
+    line-height: 3.2rem;
+  }
+  @include media-mobile {
+    margin-bottom: 0.5rem;
+  }
 }

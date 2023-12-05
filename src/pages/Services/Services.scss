@@ -4,20 +4,17 @@
   flex-direction: column;
   gap: 6rem;
 }
-.content > div:nth-child(even) {
-  padding: 4rem 3rem;
-  background: #f8f2f0;
-  @include media-tablet {
-    padding: 2rem 0;
-  }
-}
-
+// .content > section:nth-child(even) {
+//   padding: 4rem 3rem;
+//   background: #f8f2f0;
+//   @include media-tablet {
+//     padding: 2rem 0;
+//   }
+// }
 .info {
   text-align: center;
-  h2 {
-    margin-bottom: 3rem;
-  }
 }
+
 .description {
   @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
   @include adaptive-font(23, 18);
@@ -25,4 +22,15 @@
 .title {
   margin-bottom: 3rem;
   text-align: center;
+  @include media-tablet {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.about-conditions > div:first-child {
+  padding: 4rem 3rem;
+  background: #f8f2f0;
+  @include media-tablet {
+    padding: 2rem 0;
+  }
 }

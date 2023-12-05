@@ -1,4 +1,13 @@
-import image from './../../assets/tiles/colored.jpg';
+import image1 from './../../assets/image-1.webp';
+import image2 from './../../assets/image-2.webp';
+import image3 from './../../assets/img-1310.webp';
+import image4 from './../../assets/img-1310.webp';
+import image5 from './../../assets/tiles/about-me.webp';
+import image6 from './../../assets/tiles/contacts.webp';
+import image7 from './../../assets/tiles/family.webp';
+import image8 from './../../assets/tiles/home.webp';
+import image9 from './../../assets/tiles/love-story.webp';
+
 export type infoTypes = {
   page: string;
   data: {
@@ -17,13 +26,31 @@ export const PortfilioPagesInfo: infoTypes[] = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam alias tempore. Ipsum, ducimus libero! Deleniti magni voluptatem pariatur at?',
       images: [
         {
-          name: 'Moscow',
-          path: 'https://media.istockphoto.com/id/1062947134/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%B1%D0%BE%D1%80-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D0%BB%D1%83%D1%87%D0%B8-%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B0.jpg?s=612x612&w=0&k=20&c=rSRPoCl78qvsYxaRhOa0xS_z10jDDnJvhteWLM5w8yo=',
+          name: 'image1',
+          path: image1,
         },
-        { name: 'Rabit', path: image },
+        { name: 'image2', path: image2 },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image3',
+          path: image3,
+        },
+        {
+          name: 'image8',
+          path: image8,
+        },
+        {
+          name: 'image4',
+          path: image4,
+        },
+        { name: 'image5', path: image5 },
+        {
+          name: 'image6',
+          path: image6,
+        },
+        { name: 'image9', path: image9 },
+        {
+          name: 'image7',
+          path: image7,
         },
       ],
     },
@@ -36,27 +63,31 @@ export const PortfilioPagesInfo: infoTypes[] = [
         'Lorem psum dolor sit, amet consectetur. Quasi, numqpsum dolor sit, amet consectetur. Quasi, numq',
       images: [
         {
-          name: 'Moscow',
-          path: 'https://media.istockphoto.com/id/1062947134/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%B1%D0%BE%D1%80-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D0%BB%D1%83%D1%87%D0%B8-%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B0.jpg?s=612x612&w=0&k=20&c=rSRPoCl78qvsYxaRhOa0xS_z10jDDnJvhteWLM5w8yo=',
+          name: 'image1',
+          path: image1,
         },
-        { name: 'Rabit', path: image },
+        { name: 'image2', path: image2 },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
-        },
-        {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image3',
+          path: image3,
         },
         {
-          name: 'Moscow',
-          path: 'https://media.istockphoto.com/id/1062947134/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%B1%D0%BE%D1%80-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D0%BB%D1%83%D1%87%D0%B8-%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B0.jpg?s=612x612&w=0&k=20&c=rSRPoCl78qvsYxaRhOa0xS_z10jDDnJvhteWLM5w8yo=',
+          name: 'image8',
+          path: image8,
         },
-        { name: 'Rabit', path: image },
-        { name: 'Rabit', path: image },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image4',
+          path: image4,
+        },
+        { name: 'image5', path: image5 },
+        {
+          name: 'image6',
+          path: image6,
+        },
+        { name: 'image9', path: image9 },
+        {
+          name: 'image7',
+          path: image7,
         },
       ],
     },
@@ -69,34 +100,31 @@ export const PortfilioPagesInfo: infoTypes[] = [
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam aliasLorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam alias.',
       images: [
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image1',
+          path: image1,
+        },
+        { name: 'image2', path: image2 },
+        {
+          name: 'image3',
+          path: image3,
         },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image8',
+          path: image8,
         },
         {
-          name: 'Moscow',
-          path: 'https://media.istockphoto.com/id/1062947134/ru/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%B1%D0%BE%D1%80-%D0%B2%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F-%D0%B1%D0%BB%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B7%D0%BE%D0%BB%D0%BE%D1%82%D1%8B%D0%B5-%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B5-%D0%BB%D1%83%D1%87%D0%B8-%D1%81%D0%BE%D0%BB%D0%BD%D1%86%D0%B0.jpg?s=612x612&w=0&k=20&c=rSRPoCl78qvsYxaRhOa0xS_z10jDDnJvhteWLM5w8yo=',
+          name: 'image4',
+          path: image4,
         },
-        { name: 'Rabit', path: image },
-        { name: 'Rabit', path: image },
-        { name: 'Rabit', path: image },
+        { name: 'image5', path: image5 },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image6',
+          path: image6,
         },
+        { name: 'image9', path: image9 },
         {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
-        },
-        { name: 'Rabit', path: image },
-        { name: 'Rabit', path: image },
-
-        {
-          name: 'Girl',
-          path: 'https://i.pinimg.com/736x/5b/6e/ca/5b6eca63605bea0eeb48db43f77fa0ce.jpg',
+          name: 'image7',
+          path: image7,
         },
       ],
     },

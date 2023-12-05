@@ -1,22 +1,17 @@
 @import './../../shared/styles/helpers';
 
 .content {
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
+  width: 100%;
 }
-.info {
-  max-width: 90%;
-  margin: 0 auto;
-}
-.title {
-  padding: 1rem;
-  margin-bottom: 3rem;
-}
+
 .description {
-  align-self: center;
   @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
+  padding: 1rem;
+  margin-bottom: 5rem;
+  @include adaptive-font(23, 18);
+  @include media-tablet {
+    margin-bottom: 2rem;
+    line-height: 2.7rem;
+  }
 }

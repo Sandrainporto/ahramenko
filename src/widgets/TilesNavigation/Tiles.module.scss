@@ -1,23 +1,25 @@
 @import './../../shared/styles/helpers';
 
-.title {
-  margin-bottom: 8rem;
-  text-align: center;
-  line-height: 3.6rem;
-  @include media-tablet {
-    margin-bottom: 5rem;
-  }
-}
+.tiles {
+  margin: 6rem 0 0 0;
 
-.container {
   width: 100%;
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, minmax(200px, 450px));
-  grid-template-rows: repeat(2, 250px);
-  justify-items: center;
+  // grid-template-rows: repeat(2, 250px);
+  grid-template-rows: repeat(3, 250px);
 
+  justify-items: center;
   @include media-laptop-small {
+    margin: 2rem 0 0 0;
+  }
+  @media screen and (max-width: 970px) {
+    // grid-template-rows: repeat(5, 200px);
+    // // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    //     grid-template-columns: repeat(2, minmax(280px, 1fr));
+
+    // grid-auto-flow: row dense;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 200px);
     gap: 1px;
@@ -27,9 +29,7 @@
 .item {
   position: relative;
   transition: all 0.7s ease;
-  @include media-laptop-small {
-    width: 100%;
-  }
+  width: 100%;
 
   &:hover {
     @extend %block-zoom;
@@ -39,24 +39,25 @@
 .item_big {
   grid-column: span 2;
   grid-row: span 2;
-  @include media-laptop-small {
+
+  @media screen and (max-width: 970px) {
     grid-row: span 1;
   }
 }
 
 .image {
   height: 100%;
-  @include media-laptop-small {
-    height: 200px;
-  }
+
   img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    object-position: center;
     object-fit: cover;
-    @include media-laptop-small {
-      object-fit: fill;
-    }
   }
+}
+img:is(.moved) {
+  object-position: center 30%;
 }
 
 .image_title {
