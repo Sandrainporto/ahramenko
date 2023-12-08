@@ -7,6 +7,7 @@ import Footer from '../widgets/Footer/Footer.tsx';
 import Portfolio from '../pages/Portfolio/Portfolio.tsx';
 import './App.scss';
 import Services from '../pages/Services/Services.tsx';
+import AboutMe from '../pages/About-me/About-me.tsx';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/love-story" element={<Portfolio />} />
           <Route path="/home-sessions" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/about-me" element={<AboutMe />} />
 
           <Route path="*" element={<Error />} />
         </Routes>
