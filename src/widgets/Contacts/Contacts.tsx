@@ -6,9 +6,9 @@ const Contacts = () => {
   return (
     <Section classNames="contacts">
       <div className={styles.contacts}>
-        <h4 className="title">
-          Lorem ipsum, dolor sit amet consectetur adipisicing.
-        </h4>
+        <h3 className="title">
+          Для записи свяжитесь со мной удобным для Вас способом!
+        </h3>
         <div className={styles.socials}>
           <Icons textType={true} />
         </div>

@@ -1,0 +1,39 @@
+@import './../../shared/styles/helpers';
+.main {
+  a {
+    background: $color-background-add;
+  }
+}
+.image {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  @include media-tablet {
+    height: 40vh;
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.info {
+  margin: 6rem auto 3rem;
+  @include media-mobile-small {
+    margin: 3rem auto 0;
+  }
+}
+.message {
+  width: 85%;
+  margin: 0 auto;
+  @extend %font-add;
+  text-align: center;
+  @include font($size: 2rem, $height: 4.1rem, $weight: normal);
+  @include adaptive-font(20, 16);
+  @include media-tablet {
+    line-height: 3.5rem;
+    text-align: justify;
+  }
+}
