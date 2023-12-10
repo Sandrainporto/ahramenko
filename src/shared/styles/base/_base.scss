@@ -31,15 +31,13 @@ h2 {
 h3 {
   @extend%font-add;
   @include font(2.7rem, 3.9rem);
-  @include adaptive-font(27, 20);
+  @include adaptive-font(27, 21);
   font-family: 'Lobster', sans-serif;
-
-  @include media-mobile {
-    @include font($height: 3.1rem, $size: 2.1rem);
-  }
 }
 
 h4 {
+  font-family: 'Lobster', sans-serif;
+
   @include font(2.2rem, 3rem, 600);
   @include media-tablet {
     @include font($height: 3rem, $size: 2rem);

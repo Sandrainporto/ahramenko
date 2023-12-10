@@ -96,10 +96,12 @@ const Navigation = ({ state, setState }: Props) => {
 
       <ul className={styles.navigation_list}>
         {RightNavigation.map((link) => (
-          <li key={link.title}
-          onClick={() => {
-            handleLinkClick(link);
-          }}>
+          <li
+            key={link.title}
+            onClick={() => {
+              handleLinkClick(link);
+            }}
+          >
             <NavLink className={styles.navigation_link} to={link.path}>
               {link.title}
             </NavLink>
