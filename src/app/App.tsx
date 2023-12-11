@@ -9,6 +9,7 @@ import './App.scss';
 import Services from '../pages/Services/Services.tsx';
 import AboutMe from '../pages/About-me/About-me.tsx';
 import ContactsPage from '../pages/ContactsPage/ContactsPage.tsx';
+import TestimonialsPage from '../pages/Testimonials/Testimonials.tsx';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/home-sessions" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
 
           <Route path="*" element={<Error />} />

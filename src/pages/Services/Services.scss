@@ -18,6 +18,7 @@
 .description {
   @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
   @include adaptive-font(23, 18);
+  text-align: center;
 }
 .title {
   margin-bottom: 3rem;
