@@ -1,5 +1,5 @@
 import styles from './Button-TopScroll.module.scss';
-import logo from './../../../assets/logo-dark.png';
+import logo from './../../../assets/logo.png';
 
 const ButtonTopScroll = () => {
   const handlerScrollUp = () => {

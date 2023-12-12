@@ -2,7 +2,6 @@ import Header from '../widgets/Header/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from '../pages/Main/Main';
 import Error from '../pages/Error/Error';
-// import Contacts from '../pages/Contacts.tsx';
 import Footer from '../widgets/Footer/Footer.tsx';
 import Portfolio from '../pages/Portfolio/Portfolio.tsx';
 import './App.scss';

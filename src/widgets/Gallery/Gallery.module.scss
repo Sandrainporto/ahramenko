@@ -7,7 +7,6 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
-  // grid-auto-flow: row dense;
   @include media-laptop-small {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     .item:nth-child(3n) {
@@ -18,7 +17,7 @@
   @include media-tablet {
     padding: 2rem;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 500.98px) {
     grid-template-columns: 1fr;
     .item:nth-child(3n) {
       grid-column: 1;

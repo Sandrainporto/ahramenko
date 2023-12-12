@@ -1,7 +1,5 @@
 @import './../../shared/styles/helpers';
 .item {
-  // flex: 0 1 23%;
-  // min-width: 275px;
   width: 300px;
   padding: 3rem 2rem;
   box-shadow:
@@ -9,7 +7,7 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background: $color-background;
   border-radius: 15px;
-  @media screen and (max-width: 1388px) {
+  @media screen and (max-width: 1388.98px) {
     flex: 0 1 47%;
   }
   @include media-tablet {
@@ -21,12 +19,13 @@
 }
 
 .heading {
-  @include font($size: 1.8rem, $height: 3.6rem, $weight: 400);
+  @include font($size: 1.9rem, $height: 3.6rem, $weight: 500);
+  color: rgb(77, 77, 77);
   margin: 1.5rem 0;
 }
 .description {
   text-align: justify;
-  @media screen and (max-width: 1388px) {
+  @media screen and (max-width: 1388.98px) {
     text-align: center;
   }
 }

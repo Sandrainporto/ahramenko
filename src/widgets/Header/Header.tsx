@@ -1,6 +1,6 @@
 import Navigation from '../../entities/Navigation/Navigation';
 import styles from './Header.module.scss';
-import logo from './../../assets/logo-dark.png';
+import logo from './../../assets/logo.png';
 
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';

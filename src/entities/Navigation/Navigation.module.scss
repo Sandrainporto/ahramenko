@@ -88,6 +88,9 @@
   li {
     position: relative;
   }
+  @media screen and (max-width: 1000.98px) {
+    flex: 0 1 40%;
+  }
 }
 
 .navigation_link {
@@ -151,7 +154,7 @@
   img {
     max-width: 20rem;
     @include media-laptop-small {
-      max-width: 18rem;
+      max-width: 15rem;
     }
   }
 }

@@ -17,21 +17,21 @@ export const photoTypes: Type[] = [
     path: '/home-sessions',
     title: 'Домашняя',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
+      'Здесь каждый момент пропитан непринужденностью и свободой. Фотографии позволят сохранить воспоминания о веселых семейных играх, живом смехе детей, нежных моментах между родителями и многочисленных драгоценных мгновениях повседневной жизни.',
     background: homeBckground,
   },
   {
     path: '/love-story',
     title: 'Love Story',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
+      ' Вы увидите нежные моменты, улыбки и романтические прогулки, позволяющие почувствовать всю близость и страсть. Каждое фото передает теплоту и интимность, которые есть в отношениях. Фотосессия создает прекрасные воспоминания, которые можно сохранить и поделиться с близкими.',
     background: loveStoryBackground,
   },
   {
     path: '/family',
     title: 'Семейная',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem praesentium, iste doloribus eligendi veritatis quos consequuntur earum libero, sapiente adipisci! Quas neque accusantium ad voluptatum id harum vero nemo.',
+      'Близость, доверие и поддержка - все это будет видно на каждой фотографии. Фотосессия подарит возможность запечатлеть общие страсти и интересы, создавая историю семьи, которую можно будет вспомнить снова и снова, и которая станет бесценным кладезем семейных сокровищ.',
     background: familyBackground,
   },
 ];
@@ -44,13 +44,13 @@ const PhotoTypes = () => {
           <div className={styles.image}>
             <img src={type.background} alt={type.title} />
           </div>
-          <div className="info">
+          <div className={styles.info}>
             <h3 className={styles.title}>{type.title}</h3>
             <p className={styles.description}>{type.description}</p>
-            <p className={styles.price}>
-              <strong>Стоимость:</strong> <span>120 руб.</span>
-            </p>
           </div>
+          <p className={styles.price}>
+            <strong>Стоимость:</strong> <span>120 руб.</span>
+          </p>
 
           <MyButtonLink path={type.path} text="Примеры работ" />
         </div>

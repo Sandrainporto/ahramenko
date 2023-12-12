@@ -4,7 +4,6 @@
   padding: 6rem 0 1rem;
   width: 100%;
   background-color: $color-background;
-  // border: 3px solid yellow;
 
   @include media-laptop-small {
     padding: 2rem 0;
@@ -20,7 +19,6 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem;
-  // border: 1px solid red;
 
   @include media-tablet {
     padding: 2rem;
@@ -28,12 +26,6 @@
   @include media-mobile {
     padding: 2rem 1rem;
   }
-  // @include media-tablet {
-  //   padding: 1rem 2rem;
-  // }
-  // @include media-mobile {
-  //   padding: 1rem;
-  // }
 }
 .section:is(.contacts) {
   padding: 2rem 0;

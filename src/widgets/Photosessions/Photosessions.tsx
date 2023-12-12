@@ -7,7 +7,7 @@ const Photosessions = () => {
     <Section classNames="types">
       <div className={styles.photosession_types}>
         <div className="info">
-          <h3 className="title">Виды и направления</h3>
+          <h2 className="heading">Виды и направления</h2>
           <div className="description">
             Здесь Вы можете ознакомиться с основными направлениями моей
             деятельности

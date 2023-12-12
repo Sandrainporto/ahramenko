@@ -12,7 +12,7 @@ const Photographer = () => {
         </div>
 
         <div className={styles.info}>
-          <h2 className={styles.name}>Александра Ахраменко</h2>
+          <h3 className={styles.name}>Александра Ахраменко</h3>
           <p className={styles.message}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est autem
             quas ullam voluptates quo quidem quos excepturi culpa, doloribus
