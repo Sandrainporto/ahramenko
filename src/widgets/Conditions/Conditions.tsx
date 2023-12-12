@@ -15,7 +15,7 @@ const Conditions = () => {
   return (
     <Section classNames="about-conditions">
       <div className="conditions">
-        <h3 className="title">Условия фотосъемки</h3>
+        <h2 className="heading">Условия фотосъемки</h2>
         <div className={styles.condition_list}>
           <ul className="list">
             {conditionList.map((condition, index) => (

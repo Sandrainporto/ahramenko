@@ -1,6 +1,6 @@
 import styles from './Navigation.module.scss';
 import { NavLink } from 'react-router-dom';
-import logoDark from './../../assets/logo-dark.png';
+import logoDark from './../../assets/logo.png';
 
 import { Dispatch, SetStateAction } from 'react';
 

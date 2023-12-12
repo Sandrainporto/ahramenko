@@ -21,9 +21,9 @@ export const PortfilioPagesInfo: infoTypes[] = [
   {
     page: 'love-story',
     data: {
-      title: 'Lorem ipsum dolor sit amet.',
+      title: 'Магия любви в каждом кадре',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam alias tempore. Ipsum, ducimus libero! Deleniti magni voluptatem pariatur at?',
+        'Здесь я представляю Вам свои фотографии, которые превращают обычные моменты в незабываемые истории любви. Каждая фотография - это иллюстрация Вашей страсти, нежности и понимания.',
       images: [
         {
           name: 'image1',
@@ -58,9 +58,9 @@ export const PortfilioPagesInfo: infoTypes[] = [
   {
     page: 'family',
     data: {
-      title: 'Lorem ipsum dolor sit, amet consectetur. Quasi, numquam?',
+      title: 'Семейное счастье: взгляд сквозь объектив',
       description:
-        'Lorem psum dolor sit, amet consectetur. Quasi, numqpsum dolor sit, amet consectetur. Quasi, numq',
+        'Каждый кадр – это история любви, радости и тепла. В стремлении зафиксировать уникальные моменты Вашей семейной жизни, чтобы они стали бесценными воспоминаниями.',
       images: [
         {
           name: 'image1',
@@ -95,9 +95,9 @@ export const PortfilioPagesInfo: infoTypes[] = [
   {
     page: 'home-sessions',
     data: {
-      title: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+      title: 'Истории, рассказанные домашними снимками',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam aliasLorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam alias.',
+        'Здесь Вы найдете искренние фотографии, которые отражают интимные моменты Вашей жизни. Я фиксирую на пленку улыбки, эмоции и неповторимую атмосферу Вашего дома. Доверьтесь мне, чтобы запечатлеть важные моменты Вашей жизни.',
       images: [
         {
           name: 'image1',

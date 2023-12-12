@@ -2,13 +2,12 @@
 
 .item {
   max-width: 400px;
-
   display: flex;
   flex-direction: column;
   padding: 3rem 1.5rem;
   border-radius: 15px;
 
-  @media screen and (max-width: 929px) {
+  @media screen and (max-width: 929.98px) {
     padding: 3rem 1.5rem;
     max-width: 100%;
   }
@@ -33,6 +32,9 @@
     height: 100%;
     object-fit: cover;
   }
+}
+.info {
+  flex: 1 1 auto;
 }
 .title {
   margin: 1.5rem 0;

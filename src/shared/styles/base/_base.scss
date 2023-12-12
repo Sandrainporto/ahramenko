@@ -22,22 +22,16 @@ h2 {
   @include font(3.4rem, 4.6rem);
   @include adaptive-font(34, 18);
   text-transform: uppercase;
-
-  // @include media-mobile {
-  //   @include font($height: 3.3rem, $size: 2.4rem);
-  // }
 }
 
 h3 {
   @extend%font-add;
   @include font(2.7rem, 3.9rem);
   @include adaptive-font(27, 21);
-  font-family: 'Lobster', sans-serif;
 }
 
 h4 {
   font-family: 'Lobster', sans-serif;
-
   @include font(2.2rem, 3rem, 600);
   @include media-tablet {
     @include font($height: 3rem, $size: 2rem);
@@ -78,8 +72,6 @@ a.active {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-
-  // border: 1px solid #000;
 }
 
 .heading {

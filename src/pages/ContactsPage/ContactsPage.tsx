@@ -12,9 +12,9 @@ const ContactsPage = () => {
             <img src={background} alt="page-background" />
           </div>
           <div className={styles.info}>
-            <h3 className="heading">
+            <h2 className="heading">
               Благодарю, что проявляете интерес к моему творчеству!
-            </h3>
+            </h2>
             <p className={styles.message}>
               Если у Вас возникли вопросы, появилась идея для фотосессии или
               просто хочется обсудить что-то интересное, буду рада пообщаться с
