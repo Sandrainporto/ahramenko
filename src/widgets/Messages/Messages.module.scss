@@ -9,9 +9,11 @@
 }
 .paragraph {
   @extend %font-add;
-
   @include font($size: 2rem, $height: 4.1rem, $weight: normal);
   @include adaptive-font(20, 16);
+  @include media-mobile {
+    text-align: justify;
+  }
 }
 .paragraph:last-child {
   margin-bottom: 12rem;

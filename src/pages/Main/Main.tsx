@@ -6,10 +6,8 @@ const Main = () => {
   return (
     <>
       <Slider />
-      <main className="main">
-        <Tiles />
-        <Photographer />
-      </main>
+      <Tiles />
+      <Photographer />
     </>
   );
 };

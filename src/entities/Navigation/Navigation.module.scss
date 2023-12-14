@@ -50,7 +50,7 @@
       @include font($size: 2.3rem, $height: 4.1rem, $weight: 500);
       text-transform: uppercase;
       margin-left: 2.5rem;
-      @include adaptive-font(23, 19);
+      @include adaptive-font(23, 17);
 
       @include media-mobile {
         margin-left: 5px;

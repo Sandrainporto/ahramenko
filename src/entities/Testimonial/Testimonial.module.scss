@@ -7,6 +7,9 @@
   justify-content: center;
   gap: 15rem 7rem;
   margin: 5rem auto;
+  @include media-tablet {
+    margin-top: 9rem;
+  }
 }
 .testimonial {
   padding: 1rem 1.5rem;

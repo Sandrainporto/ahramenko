@@ -37,4 +37,7 @@
 .description {
   flex: 1 1 auto;
   margin-bottom: 9rem;
+  @include media-mobile {
+    text-align: justify;
+  }
 }

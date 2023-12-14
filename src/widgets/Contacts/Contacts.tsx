@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <Section classNames="contacts">
       <div className={styles.contacts}>
-        <h3 className="title">
+        <h3 className={`${styles.title}` + ' ' + 'title'}>
           Для записи свяжитесь со мной удобным для Вас способом!
         </h3>
         <div className={styles.socials}>
