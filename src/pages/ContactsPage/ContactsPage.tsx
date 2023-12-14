@@ -5,7 +5,7 @@ import Contacts from '../../widgets/Contacts/Contacts';
 
 const ContactsPage = () => {
   return (
-    <main className={`${styles.main + ' ' + 'main'}`}>
+    <>
       <Section classNames="thank-you">
         <div className={styles.content}>
           <div className={styles.image}>
@@ -26,7 +26,7 @@ const ContactsPage = () => {
         </div>
       </Section>
       <Contacts />
-    </main>
+    </>
   );
 };
 

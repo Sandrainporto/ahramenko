@@ -71,6 +71,7 @@ a.active {
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -85,4 +86,9 @@ a.active {
   @include media-mobile {
     margin-bottom: 0.5rem;
   }
+}
+.description {
+  @include font($size: 2.3rem, $height: 3.5rem, $weight: 300);
+  @include adaptive-font(23, 18);
+  text-align: center;
 }

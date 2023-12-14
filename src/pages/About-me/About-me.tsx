@@ -4,11 +4,11 @@ import MyLife from '../../widgets/MyLife/MyLife';
 
 const AboutMe = () => {
   return (
-    <main className="main">
+    <>
       <Greetings />
       <Messages />
       <MyLife />
-    </main>
+    </>
   );
 };
 
