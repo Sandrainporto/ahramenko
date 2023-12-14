@@ -1,13 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Main from '../pages/Main/Main';
-import Error from '../pages/Error/Error';
-import Portfolio from '../pages/Portfolio/Portfolio.tsx';
 import './App.scss';
-import Services from '../pages/Services/Services.tsx';
-import AboutMe from '../pages/About-me/About-me.tsx';
-import ContactsPage from '../pages/ContactsPage/ContactsPage.tsx';
-import TestimonialsPage from '../pages/Testimonials/Testimonials.tsx';
+import { lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Layout from '../shared/Layouts/Layout/Layout.tsx';
+
+const Main = lazy(() => import('../pages/Main/Main.tsx'));
+const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio.tsx'));
+const Services = lazy(() => import('../pages/Services/Services.tsx'));
+const AboutMe = lazy(() => import('../pages/About-me/About-me.tsx'));
+const TestimonialsPage = lazy(
+  () => import('../pages/Testimonials/Testimonials.tsx')
+);
+const ContactsPage = lazy(
+  () => import('../pages/ContactsPage/ContactsPage.tsx')
+);
+const Error = lazy(() => import('../pages/Error/Error.tsx'));
 
 const App = () => {
   return (
@@ -28,5 +35,4 @@ const App = () => {
     </Router>
   );
 };
-
 export default App;
