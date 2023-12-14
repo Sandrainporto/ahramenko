@@ -10,15 +10,13 @@ const Portfolio = () => {
     ?.data;
 
   return (
-    <main className="main">
-      <Section classNames="portfolio">
-        <div className={styles.content}>
-          <h2 className="heading">{pageData?.title}</h2>
-          <div className={styles.description}>{pageData?.description}</div>
-          <Gallery images={pageData?.images} />
-        </div>
-      </Section>
-    </main>
+    <Section classNames="portfolio">
+      <div className={styles.content}>
+        <h2 className="heading">{pageData?.title}</h2>
+        <div className={styles.description}>{pageData?.description}</div>
+        <Gallery images={pageData?.images} />
+      </div>
+    </Section>
   );
 };
 

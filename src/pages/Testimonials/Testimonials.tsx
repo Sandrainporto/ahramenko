@@ -2,7 +2,7 @@ import Testimonial from '../../entities/Testimonial/Testimonial';
 import Section from '../../shared/Layouts/Section/Section';
 const TestimonialsPage = () => {
   return (
-    <main className="main">
+    <>
       <Section classNames="testimonials">
         <h2 className="heading">Отзывы</h2>
         <p className="description">
@@ -10,7 +10,7 @@ const TestimonialsPage = () => {
         </p>
       </Section>
       <Testimonial />
-    </main>
+    </>
   );
 };
 

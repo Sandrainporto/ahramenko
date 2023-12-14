@@ -7,7 +7,7 @@ import './Services.scss';
 
 const Services = () => {
   return (
-    <main className="main">
+    <>
       <Section classNames="services">
         <div className="info">
           <h2 className="heading">Услуги</h2>
@@ -21,7 +21,7 @@ const Services = () => {
       <Photosessions />
       <Conditions />
       <Contacts />
-    </main>
+    </>
   );
 };
 
