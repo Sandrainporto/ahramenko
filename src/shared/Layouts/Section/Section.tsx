@@ -1,17 +1,22 @@
+import { motion } from 'framer-motion';
 import './Section.scss';
+import { forwardRef, LegacyRef } from 'react';
 type SectionProps = {
   classNames: string;
   children: JSX.Element[] | JSX.Element;
 };
 
-const Section = ({ classNames, children }: SectionProps) => {
-  const classes = 'section ' + classNames;
+const Section = forwardRef(
+  ({ classNames, children }: SectionProps, ref: LegacyRef<HTMLElement>) => {
+    const classes = 'section ' + classNames;
 
-  return (
-    <section className={classes}>
-      <div className="container">{children}</div>
-    </section>
-  );
-};
+    return (
+      <section className={classes} ref={ref}>
+        <div className="container">{children}</div>
+      </section>
+    );
+  }
+);
 
 export default Section;
+export const MSection = motion(Section);

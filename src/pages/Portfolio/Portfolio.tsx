@@ -1,7 +1,20 @@
-import Section from '../../shared/Layouts/Section/Section';
+import { MSection } from '../../shared/Layouts/Section/Section';
 import Gallery from '../../widgets/Gallery/Gallery';
 import styles from './Portfolio.module.scss';
 import { PortfilioPagesInfo } from './PageData';
+import { motion } from 'framer-motion';
+
+const textAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.8, delay: custom * 0.3 },
+  }),
+};
 
 const Portfolio = () => {
   const pageUrl = window.location.pathname.split('/');
@@ -10,13 +23,26 @@ const Portfolio = () => {
     ?.data;
 
   return (
-    <Section classNames="portfolio">
+    <MSection
+      classNames="portfolio"
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.2, once: true }}
+    >
       <div className={styles.content}>
-        <h2 className="heading">{pageData?.title}</h2>
-        <div className={styles.description}>{pageData?.description}</div>
+        <motion.h2 className="heading" custom={1} variants={textAnimation}>
+          {pageData?.title}
+        </motion.h2>
+        <motion.div
+          className={styles.description}
+          custom={2}
+          variants={textAnimation}
+        >
+          {pageData?.description}
+        </motion.div>
         <Gallery images={pageData?.images} />
       </div>
-    </Section>
+    </MSection>
   );
 };
 
