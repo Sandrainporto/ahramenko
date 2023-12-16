@@ -1,5 +1,5 @@
-import image from './../../assets/tiles/about-me.webp';
-import image2 from './../../assets/tiles/family.webp';
+import image from './../../assets/testimonials/about-me.webp';
+import image2 from './../../assets/testimonials/family.webp';
 
 type testimonialsTypes = {
   author: string;

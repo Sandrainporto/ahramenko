@@ -1,7 +1,7 @@
 import { MSection } from '../../shared/Layouts/Section/Section';
 import { MButtonLink } from '../../shared/ui/Button-Link/ButtonLink';
 import styles from './Photographer.module.scss';
-import image from './../../assets/image-2.webp';
+import image from './../../assets/content-images/image-main.webp';
 import { motion } from 'framer-motion';
 import {
   imageAnimation,

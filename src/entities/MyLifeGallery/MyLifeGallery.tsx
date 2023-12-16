@@ -1,8 +1,8 @@
 import styles from './MyLifeGallery.module.scss';
-import image1 from './../../assets/tiles/about-me.webp';
-import image2 from './../../assets/tiles/contacts.webp';
-import image3 from './../../assets/tiles/home.webp';
-import image4 from './../../assets/tiles/testimonials.webp';
+import image1 from './../../assets/author-photo/about-me.webp';
+import image2 from './../../assets/author-photo/contacts.webp';
+import image3 from './../../assets/author-photo/home.webp';
+import image4 from './../../assets/author-photo/love-story.webp';
 import { motion } from 'framer-motion';
 import { lifeGalleryAnimation } from '../../shared/Animations/animations';
 

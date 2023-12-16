@@ -1,6 +1,6 @@
 import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './Greetings.module.scss';
-import background from './../../assets/image-2.webp';
+import background from './../../assets/content-images/image-main.webp';
 import { motion } from 'framer-motion';
 import { imageAnimation } from '../../shared/Animations/animations';
 
