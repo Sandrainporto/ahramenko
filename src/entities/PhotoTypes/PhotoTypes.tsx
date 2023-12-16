@@ -1,7 +1,7 @@
 import styles from './PhotoTypes.module.scss';
-import homeBckground from './../../assets/tiles/home.webp';
-import loveStoryBackground from './../../assets/tiles/love-story.webp';
-import familyBackground from './../../assets/tiles/contacts.webp';
+import homeBckground from './../../assets/photo-types/home.webp';
+import loveStoryBackground from './../../assets/photo-types/love-story.webp';
+import familyBackground from './../../assets/photo-types/contacts.webp';
 import { motion } from 'framer-motion';
 
 import MyButtonLink from '../../shared/ui/Button-Link/ButtonLink';

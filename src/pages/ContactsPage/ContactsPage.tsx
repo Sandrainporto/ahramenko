@@ -1,6 +1,6 @@
 import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './ContactsPage.module.scss';
-import background from './../../assets/slider/slide-3.webp';
+import background from './../../assets/content-images/slide-1.webp';
 import Contacts from '../../widgets/Contacts/Contacts';
 import { motion } from 'framer-motion';
 import {

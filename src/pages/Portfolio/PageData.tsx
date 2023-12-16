@@ -1,12 +1,12 @@
-import image1 from './../../assets/image-1.webp';
-import image2 from './../../assets/image-2.webp';
-import image3 from './../../assets/img-1310.webp';
-import image4 from './../../assets/img-1310.webp';
-import image5 from './../../assets/tiles/about-me.webp';
-import image6 from './../../assets/tiles/contacts.webp';
-import image7 from './../../assets/tiles/family.webp';
-import image8 from './../../assets/tiles/home.webp';
-import image9 from './../../assets/tiles/love-story.webp';
+import image1 from './../../assets/portfolios/family/image-1.webp';
+import image2 from './../../assets/portfolios/family/image-2.webp';
+import image3 from './../../assets/portfolios/family/img-1310.webp';
+import image4 from './../../assets/portfolios/family/img-1310.webp';
+import image5 from './../../assets/portfolios/family/about-me.webp';
+import image6 from './../../assets/portfolios/family/contacts.webp';
+import image7 from './../../assets/portfolios/family/family.webp';
+import image8 from './../../assets/portfolios/family/home.webp';
+import image9 from './../../assets/portfolios/family/love-story.webp';
 
 export type infoTypes = {
   page: string;
