@@ -2,17 +2,7 @@ import styles from './Gallery.module.scss';
 
 import { motion } from 'framer-motion';
 
-const tilesAnimation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: (custom: number) => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.3 },
-  }),
-};
+import { tilesAnimation } from '../../shared/Animations/animations';
 
 const Gallery = ({
   images,

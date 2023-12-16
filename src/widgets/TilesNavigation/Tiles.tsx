@@ -3,29 +3,10 @@ import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './Tiles.module.scss';
 import { tilesData } from './TilesData';
 import { motion } from 'framer-motion';
-
-const textAnimation = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: (custom: number) => ({
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.8, delay: custom * 0.3 },
-  }),
-};
-const tilesAnimation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: (custom: number) => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-};
+import {
+  textAnimationUpDown,
+  tilesAnimation,
+} from '../../shared/Animations/animations';
 
 const Tiles = () => {
   return (
@@ -33,9 +14,9 @@ const Tiles = () => {
       classNames="site-map"
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.25, once: true }}
     >
-      <motion.h2 custom={1} variants={textAnimation} className="heading">
+      <motion.h2 custom={1} variants={textAnimationUpDown} className="heading">
         ваши трогательные эмоции в моменте
       </motion.h2>
       <div className={styles.tiles}>

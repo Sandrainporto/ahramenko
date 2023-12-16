@@ -1,23 +1,40 @@
-import Section from '../../shared/Layouts/Section/Section';
+import { MSection } from '../../shared/Layouts/Section/Section';
 import Conditions from '../../widgets/Conditions/Conditions';
 import Contacts from '../../widgets/Contacts/Contacts';
 import Photosessions from '../../widgets/Photosessions/Photosessions';
 import Process from '../../widgets/Process/Process';
+import { motion } from 'framer-motion';
+import { textAnimationUpDown } from '../../shared/Animations/animations';
 import './Services.scss';
 
 const Services = () => {
   return (
     <>
-      <Section classNames="services">
+      <MSection
+        classNames="services"
+        initial={'hidden'}
+        whileInView={'visible'}
+        viewport={{ amount: 0.2, once: true }}
+      >
         <div className="info">
-          <h2 className="heading">Услуги</h2>
-          <div className="description">
+          <motion.h2
+            custom={1}
+            variants={textAnimationUpDown}
+            className="heading"
+          >
+            Услуги
+          </motion.h2>
+          <motion.div
+            custom={2}
+            variants={textAnimationUpDown}
+            className="description"
+          >
             Здесь вы можете получить информацию об условиях фотосессии, пакетах
             услуг и стоимости
-          </div>
+          </motion.div>
         </div>
         <Process />
-      </Section>
+      </MSection>
       <Photosessions />
       <Conditions />
       <Contacts />

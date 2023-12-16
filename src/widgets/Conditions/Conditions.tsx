@@ -1,5 +1,10 @@
-import Section from '../../shared/Layouts/Section/Section';
+import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './Conditions.module.scss';
+import { motion } from 'framer-motion';
+import {
+  textAnimationUpDown,
+  textAnimationLeft,
+} from '../../shared/Animations/animations';
 
 const Conditions = () => {
   const conditionList: string[] = [
@@ -13,20 +18,36 @@ const Conditions = () => {
   ];
 
   return (
-    <Section classNames="about-conditions">
+    <MSection
+      classNames="about-conditions"
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.2, once: true }}
+    >
       <div className="conditions">
-        <h2 className="heading">Условия фотосъемки</h2>
+        <motion.h2
+          custom={1}
+          variants={textAnimationUpDown}
+          className="heading"
+        >
+          Условия фотосъемки
+        </motion.h2>
         <div className={styles.condition_list}>
           <ul className="list">
             {conditionList.map((condition, index) => (
-              <li key={index} className={styles.condition}>
+              <motion.li
+                custom={index * 1}
+                variants={textAnimationLeft}
+                key={index}
+                className={styles.condition}
+              >
                 {condition}
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
       </div>
-    </Section>
+    </MSection>
   );
 };
 

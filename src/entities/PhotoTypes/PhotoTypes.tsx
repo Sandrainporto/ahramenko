@@ -2,9 +2,21 @@ import styles from './PhotoTypes.module.scss';
 import homeBckground from './../../assets/tiles/home.webp';
 import loveStoryBackground from './../../assets/tiles/love-story.webp';
 import familyBackground from './../../assets/tiles/contacts.webp';
+import { motion } from 'framer-motion';
 
 import MyButtonLink from '../../shared/ui/Button-Link/ButtonLink';
+const imageAnimationWithMove = {
+  hidden: {
+    y: -100,
 
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { duration: custom * 1, delay: custom * 0.3 },
+  }),
+};
 type Type = {
   path: string;
   title: string;
@@ -39,8 +51,16 @@ export const photoTypes: Type[] = [
 const PhotoTypes = () => {
   return (
     <>
-      {photoTypes.map((type) => (
-        <div key={type.title} className={styles.item}>
+      {photoTypes.map((type, index) => (
+        <motion.div
+          initial={'hidden'}
+          whileInView={'visible'}
+          viewport={{ amount: 0.2, once: true }}
+          custom={index * 1}
+          variants={imageAnimationWithMove}
+          key={type.title}
+          className={styles.item}
+        >
           <div className={styles.image}>
             <img src={type.background} alt={type.title} />
           </div>
@@ -53,7 +73,7 @@ const PhotoTypes = () => {
           </p>
 
           <MyButtonLink path={type.path} text="Примеры работ" />
-        </div>
+        </motion.div>
       ))}
     </>
   );

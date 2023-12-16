@@ -2,8 +2,20 @@ import chat from './../../assets/icons/chat.webp';
 import camera from './../../assets/icons/camera.webp';
 import retouch from './../../assets/icons/retouch.webp';
 import photos from './../../assets/icons/photos.webp';
+import { motion } from 'framer-motion';
 
 import styles from './ProcessCard.module.scss';
+const tilesAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom: number) => ({
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.8, delay: custom * 0.5 },
+  }),
+};
 
 type ProcessTypes = {
   heading: string;
@@ -41,15 +53,23 @@ const ProcessCard = () => {
 
   return (
     <>
-      {process.map((process) => (
-        <div key={process.heading} className={styles.item}>
+      {process.map((process, index) => (
+        <motion.div
+          initial={'hidden'}
+          whileInView={'visible'}
+          viewport={{ amount: 0.2, once: true }}
+          custom={index * 1}
+          variants={tilesAnimation}
+          key={process.heading}
+          className={styles.item}
+        >
           <img className={styles.icon} src={process.icon} />
 
           <p className={styles.heading}>
             <strong>{process.heading}</strong>
           </p>
           <div className={styles.description}>{process.description} </div>
-        </div>
+        </motion.div>
       ))}
     </>
   );

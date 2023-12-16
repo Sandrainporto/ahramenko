@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
 import './Section.scss';
 import { forwardRef, LegacyRef } from 'react';
+import { motion } from 'framer-motion';
+
 type SectionProps = {
   classNames: string;
   children: JSX.Element[] | JSX.Element;
