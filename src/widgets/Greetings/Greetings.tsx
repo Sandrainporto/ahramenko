@@ -1,13 +1,29 @@
-import Section from '../../shared/Layouts/Section/Section';
+import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './Greetings.module.scss';
 import background from './../../assets/image-2.webp';
+import { motion } from 'framer-motion';
+import { imageAnimation } from '../../shared/Animations/animations';
 
 const Greetings = () => {
   return (
-    <Section classNames="greeting">
+    <MSection
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.2, once: true }}
+      classNames="greeting"
+    >
       <div className={styles.content}>
-        <img src={background} alt="background" />
-        <div className={styles.info}>
+        <motion.img
+          custom={1}
+          variants={imageAnimation}
+          src={background}
+          alt="background"
+        />
+        <motion.div
+          custom={1}
+          variants={imageAnimation}
+          className={styles.info}
+        >
           <p className={styles.position}>Фотограф</p>
           <h2 className={styles.heading}>Александра Ахраменко</h2>
           <p className="description">
@@ -16,9 +32,9 @@ const Greetings = () => {
             facere incidunt ad earum odit mollitia sit quibusdam eius nemo quod!
             Ipsum.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </Section>
+    </MSection>
   );
 };
 

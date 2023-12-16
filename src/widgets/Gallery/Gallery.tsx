@@ -1,5 +1,9 @@
 import styles from './Gallery.module.scss';
 
+import { motion } from 'framer-motion';
+
+import { tilesAnimation } from '../../shared/Animations/animations';
+
 const Gallery = ({
   images,
 }: {
@@ -7,10 +11,15 @@ const Gallery = ({
 }) => {
   return (
     <div className={styles.gallery}>
-      {images?.map((image) => (
-        <div key={image.name} className={styles.item}>
+      {images?.map((image, index) => (
+        <motion.div
+          key={image.name}
+          className={styles.item}
+          custom={index + 2 * 1}
+          variants={tilesAnimation}
+        >
           <img src={image.path} alt={image.name} />
-        </div>
+        </motion.div>
       ))}
     </div>
   );

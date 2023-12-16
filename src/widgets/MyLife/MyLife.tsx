@@ -1,25 +1,50 @@
 import MyLifeGallery from '../../entities/MyLifeGallery/MyLifeGallery';
-import Section from '../../shared/Layouts/Section/Section';
-import MyButtonLink from '../../shared/ui/Button-Link/ButtonLink';
+import { MButtonLink } from '../../shared/ui/Button-Link/ButtonLink';
 import styles from './MyLife.module.scss';
+import { motion } from 'framer-motion';
+import { MSection } from '../../shared/Layouts/Section/Section';
+import {
+  textAnimationUpDown,
+  imageAnimation,
+} from '../../shared/Animations/animations';
 
 const MyLife = () => {
   return (
-    <Section classNames="my-life">
+    <MSection
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.2, once: true }}
+      classNames="my-life"
+    >
       <div className={styles.content}>
         <div className={styles.info}>
-          <h2 className="heading">Обо мне</h2>
-          <p className={`${styles.description} + ' ' + description`}>
+          <motion.h2
+            custom={1}
+            variants={textAnimationUpDown}
+            className="heading"
+          >
+            Обо мне
+          </motion.h2>
+          <motion.p
+            custom={2}
+            variants={textAnimationUpDown}
+            className={`${styles.description} + ' ' + description`}
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
             explicabo ullam officiis eligendi recusandae. Architecto accusamus,
             dolor recusandae explicabo minima ipsum cumque eos atque voluptatem
             necessitatibus obcaecati natus iste temporibus!
-          </p>
-          <MyButtonLink path="/contacts" text="Связаться со мной" />
+          </motion.p>
+          <MButtonLink
+            custom={3}
+            variants={imageAnimation}
+            path="/contacts"
+            text="Связаться со мной"
+          />
         </div>
         <MyLifeGallery />
       </div>
-    </Section>
+    </MSection>
   );
 };
 

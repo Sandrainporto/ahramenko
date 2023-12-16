@@ -2,15 +2,23 @@ import styles from './Icons.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons';
-
+import { motion } from 'framer-motion';
+import { contactIconsAnimation } from '../../shared/Animations/animations';
 type IconsProps = {
   textType?: boolean;
 };
 
 const Icons = ({ textType }: IconsProps) => {
   return (
-    <div className={textType ? styles.icons_text : styles.icons}>
-      <a
+    <motion.div
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.2, once: true }}
+      className={textType ? styles.icons_text : styles.icons}
+    >
+      <motion.a
+        custom={4}
+        variants={contactIconsAnimation}
         className={textType ? styles.icon_text : styles.icon}
         href="tel:+375336253140"
       >
@@ -19,8 +27,10 @@ const Icons = ({ textType }: IconsProps) => {
           style={{ color: '#6e6e6e', fontSize: '23' }}
         />
         {textType ? 'Позвонить' : ''}
-      </a>
-      <a
+      </motion.a>
+      <motion.a
+        custom={5}
+        variants={contactIconsAnimation}
         className={textType ? styles.icon_text : styles.icon}
         href="https://www.instagram.com/sandraahramenko/"
       >
@@ -29,8 +39,10 @@ const Icons = ({ textType }: IconsProps) => {
           style={{ color: '#6e6e6e', fontSize: '28' }}
         />
         {textType ? 'Instagram' : ''}
-      </a>
-      <a
+      </motion.a>
+      <motion.a
+        custom={7}
+        variants={contactIconsAnimation}
         className={textType ? styles.icon_text : styles.icon}
         href="https://t.me/AlBo_9"
       >
@@ -39,8 +51,8 @@ const Icons = ({ textType }: IconsProps) => {
           style={{ color: '#6e6e6e', fontSize: '28' }}
         />
         {textType ? 'Telegram' : ''}
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 

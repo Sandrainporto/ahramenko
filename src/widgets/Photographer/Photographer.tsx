@@ -1,31 +1,63 @@
-import Section from '../../shared/Layouts/Section/Section';
-import MyButtonLink from '../../shared/ui/Button-Link/ButtonLink';
+import { MSection } from '../../shared/Layouts/Section/Section';
+import { MButtonLink } from '../../shared/ui/Button-Link/ButtonLink';
 import styles from './Photographer.module.scss';
 import image from './../../assets/image-2.webp';
+import { motion } from 'framer-motion';
+import {
+  imageAnimation,
+  textAnimationRight,
+} from '../../shared/Animations/animations';
 
 const Photographer = () => {
   return (
-    <Section classNames="about-photographer">
+    <MSection
+      classNames="about-photographer"
+      initial={'hidden'}
+      whileInView={'visible'}
+      viewport={{ amount: 0.5, once: true }}
+    >
       <div className={styles.content}>
-        <div className={styles.photo}>
+        <motion.div
+          className={styles.photo}
+          custom={1}
+          variants={imageAnimation}
+        >
           <img src={image} alt="photographer-photo" />
-        </div>
+        </motion.div>
 
-        <div className={styles.info}>
-          <h3 className={styles.name}>Александра Ахраменко</h3>
-          <p className={styles.message}>
+        <motion.div
+          className={styles.info}
+          custom={1}
+          variants={textAnimationRight}
+        >
+          <motion.h3
+            custom={2}
+            variants={textAnimationRight}
+            className={styles.name}
+          >
+            Александра Ахраменко
+          </motion.h3>
+          <motion.p
+            custom={3}
+            variants={textAnimationRight}
+            className={styles.message}
+          >
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est autem
             quas ullam voluptates quo quidem quos excepturi culpa, doloribus
-            voluptatem enim, in, id numquam vitae ut minima quasi suscipit hic!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa
-            tenetur numquam hic perferendis in modi quasi pariatur sapiente vel!
-            Est corporis, ex adipisci mollitia cum officiis aperiam debitis
-            quisquam!
-          </p>
-          <MyButtonLink path="/about" text="подробнее" />
-        </div>
+            quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Qui culpa nihil delectus accusamus, mollitia officiis minus dolorum
+            nobis illo molestiae quia velit quos rerum, cum commodi! Reiciendis
+            quis iste esse.
+          </motion.p>
+          <MButtonLink
+            path="/about"
+            text="подробнее"
+            custom={2}
+            variants={imageAnimation}
+          />
+        </motion.div>
       </div>
-    </Section>
+    </MSection>
   );
 };
 
