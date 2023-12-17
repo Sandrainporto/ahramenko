@@ -14,7 +14,7 @@ const Photographer = () => {
       classNames="about-photographer"
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ amount: 0.1, once: true }}
     >
       <div className={styles.content}>
         <motion.div

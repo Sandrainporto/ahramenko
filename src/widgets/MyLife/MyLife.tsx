@@ -13,7 +13,7 @@ const MyLife = () => {
     <MSection
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ once: true }}
       classNames="my-life"
     >
       <div className={styles.content}>

@@ -15,11 +15,11 @@ const ContactsPage = () => {
         classNames="thank-you"
         initial={'hidden'}
         whileInView={'visible'}
-        viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0.1, once: true }}
       >
         <div className={styles.content}>
           <motion.div
-            custom={1}
+            custom={0.5}
             variants={imageAnimation}
             className={styles.image}
           >

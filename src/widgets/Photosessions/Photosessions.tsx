@@ -9,13 +9,13 @@ const Photosessions = () => {
     <MSection
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.1, once: true }}
       classNames="types"
     >
       <div className={styles.photosession_types}>
         <div className="info">
           <motion.h2
-            custom={1}
+            custom={0.5}
             variants={textAnimationUpDown}
             className="heading"
           >
