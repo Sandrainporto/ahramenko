@@ -10,7 +10,7 @@ const Testimonial = () => {
       classNames="testimonials"
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.1, once: true }}
     >
       <div className={styles.content}>
         {testimonials.map((testimonial, index) => (

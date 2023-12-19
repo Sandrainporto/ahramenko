@@ -14,7 +14,7 @@ const Greetings = () => {
     >
       <div className={styles.content}>
         <motion.img
-          custom={1}
+          custom={0.5}
           variants={imageAnimation}
           src={background}
           alt="background"

@@ -21,12 +21,13 @@
   text-align: center;
   max-width: 45rem;
   padding: 7rem 4rem 7rem 0;
+
   @media screen and (max-width: 1360.98px) {
     max-width: 80%;
     padding: 7rem 0;
   }
-  @include media-tablet {
-    width: 100%;
+  @media screen and (max-width: 768.98px) {
+    max-width: 95%;
   }
   a {
     align-self: center;

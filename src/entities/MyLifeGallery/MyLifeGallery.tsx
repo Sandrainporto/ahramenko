@@ -23,7 +23,7 @@ const MyLifeGallery = () => {
     <motion.div
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.5, once: true }}
+      viewport={{ amount: 0.1, once: true }}
       className={styles.images}
     >
       {images.map((image, index) => (
