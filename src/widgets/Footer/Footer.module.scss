@@ -1,8 +1,10 @@
 @import './../../shared/styles/helpers';
+
 .footer {
   margin-top: 3rem;
   background: $color-background-dark;
 }
+
 .container {
   margin: 0 auto;
   padding: 3.5rem 1rem;
@@ -10,6 +12,7 @@
   justify-content: space-around;
   align-items: center;
   max-width: $content-width;
+
   @include media-mobile {
     flex-direction: column;
     gap: 4rem;
@@ -22,11 +25,13 @@
   @extend%font-add;
   @include font($size: 2rem, $height: 2.8rem, $weight: 600);
   transition: all 0.5s ease-in-out;
+
   &:hover {
     color: $color-link;
     text-shadow: rgb(73, 72, 72) 1px 0 10px;
   }
 }
+
 .tel {
   font-size: 1.8rem;
 }

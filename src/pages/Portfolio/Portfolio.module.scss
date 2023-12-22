@@ -12,11 +12,13 @@
   padding: 1rem;
   margin-bottom: 5rem;
   @include adaptive-font(23, 18);
+
   @include media-tablet {
     margin-bottom: 4rem;
     line-height: 2.7rem;
     width: 95%;
   }
+
   @include media-mobile {
     text-align: justify;
   }

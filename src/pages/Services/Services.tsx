@@ -25,7 +25,7 @@ const Services = () => {
             Услуги
           </motion.h2>
           <motion.div
-            custom={2}
+            custom={2.3}
             variants={textAnimationUpDown}
             className="description"
           >

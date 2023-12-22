@@ -21,6 +21,7 @@
     line-height: 6rem;
     padding-bottom: 13rem;
     transition: right 0.7s ease-in-out;
+
     .logo {
       position: relative;
       top: 1.8rem;
@@ -35,6 +36,7 @@
       align-items: flex-start;
       justify-content: flex-start;
       width: 100%;
+
       li {
         width: 100%;
         border-bottom: 1px solid $color-text;
@@ -88,6 +90,7 @@
   li {
     position: relative;
   }
+
   @media screen and (max-width: 1000.98px) {
     flex: 0 1 40%;
   }
@@ -153,6 +156,7 @@
 
   img {
     max-width: 20rem;
+
     @include media-laptop-small {
       max-width: 15rem;
     }

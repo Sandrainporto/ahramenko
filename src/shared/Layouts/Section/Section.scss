@@ -4,13 +4,16 @@
   padding: 6rem 0 1rem;
   width: 100%;
   background-color: $color-background;
+
   @include media-laptop-small {
     padding: 2rem 0;
   }
+
   @include media-tablet {
     padding: 1rem 0;
   }
 }
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
@@ -22,12 +25,15 @@
   @include media-tablet {
     padding: 2rem;
   }
+
   @include media-mobile {
     padding: 2rem 1rem;
   }
 }
+
 .section:is(.contacts) {
   padding: 2rem 0;
+
   .container {
     padding: 1rem 3rem;
   }

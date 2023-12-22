@@ -1,9 +1,7 @@
 import './App.scss';
 import { lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Layout from '../shared/Layouts/Layout/Layout.tsx';
-
 const Main = lazy(() => import('../pages/Main/Main.tsx'));
 const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio.tsx'));
 const Services = lazy(() => import('../pages/Services/Services.tsx'));

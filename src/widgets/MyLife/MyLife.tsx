@@ -30,10 +30,14 @@ const MyLife = () => {
             variants={textAnimationUpDown}
             className={`${styles.description} + ' ' + description`}
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-            explicabo ullam officiis eligendi recusandae. Architecto accusamus,
-            dolor recusandae explicabo minima ipsum cumque eos atque voluptatem
-            necessitatibus obcaecati natus iste temporibus!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam r
+            recusandae explicabo minima ipsum cumque eos atque voluptatem
+            necessitatibus obcaecati natus iste temporibus! Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Veniam r recusandae explicabo
+            minima ipsum cumque eos atque voluptatem necessitatibus obcaecati
+            natus iste temporibus! Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Veniam r recusandae explicabo minima ipsum cumque
+            eos atque voluptatem necessitatibus obcaecati natus iste temporibus!
           </motion.p>
           <MButtonLink
             custom={3}

@@ -20,7 +20,7 @@ const Greetings = () => {
           alt="background"
         />
         <motion.div
-          custom={1}
+          custom={0.5}
           variants={imageAnimation}
           className={styles.info}
         >

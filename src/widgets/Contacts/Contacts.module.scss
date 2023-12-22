@@ -1,7 +1,9 @@
 @import './../../shared/styles/helpers';
+
 .contacts {
   margin-bottom: 5rem;
   width: 70%;
+
   @include media-tablet {
     width: 100%;
   }
@@ -16,9 +18,11 @@
     margin-bottom: 2rem;
   }
 }
+
 .title {
   text-align: center;
 }
+
 .socials {
   margin-top: 4.5rem;
 }

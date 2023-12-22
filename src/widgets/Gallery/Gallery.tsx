@@ -1,7 +1,5 @@
 import styles from './Gallery.module.scss';
-
 import { motion } from 'framer-motion';
-
 import { tilesAnimation } from '../../shared/Animations/animations';
 
 const Gallery = ({
