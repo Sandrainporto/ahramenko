@@ -11,6 +11,7 @@
     padding: 3rem 1.5rem;
     max-width: 100%;
   }
+
   a {
     margin: 0 auto;
     text-transform: none;
@@ -21,9 +22,11 @@
 .image {
   height: 250px;
   position: relative;
+
   @include media-laptop-small {
     height: 350px;
   }
+
   img {
     position: absolute;
     top: 0;
@@ -33,12 +36,15 @@
     object-fit: cover;
   }
 }
+
 .info {
   flex: 1 1 auto;
 }
+
 .title {
   margin: 1.5rem 0;
 }
+
 .description {
   margin: 0 auto;
   width: 90%;

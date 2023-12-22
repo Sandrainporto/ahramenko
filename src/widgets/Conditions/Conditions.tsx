@@ -1,10 +1,7 @@
 import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './Conditions.module.scss';
 import { motion } from 'framer-motion';
-import {
-  textAnimationUpDown,
-  textAnimationLeft,
-} from '../../shared/Animations/animations';
+import { textAnimationUpDown } from '../../shared/Animations/animations';
 
 const Conditions = () => {
   const conditionList: string[] = [
@@ -35,14 +32,9 @@ const Conditions = () => {
         <div className={styles.condition_list}>
           <ul className="list">
             {conditionList.map((condition, index) => (
-              <motion.li
-                custom={index * 1}
-                variants={textAnimationLeft}
-                key={index}
-                className={styles.condition}
-              >
+              <li key={index} className={styles.condition}>
                 {condition}
-              </motion.li>
+              </li>
             ))}
           </ul>
         </div>

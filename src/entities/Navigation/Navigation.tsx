@@ -1,7 +1,6 @@
 import styles from './Navigation.module.scss';
 import { NavLink } from 'react-router-dom';
 import logoDark from './../../assets/logo.png';
-
 import { Dispatch, SetStateAction } from 'react';
 
 interface Props {
@@ -67,7 +66,6 @@ const Navigation = ({ state, setState }: Props) => {
             >
               {link.title}
             </NavLink>
-
             {link.sublinks ? (
               <ul className={styles.sub_list}>
                 {link.sublinks.map((sublink) => (
@@ -87,13 +85,11 @@ const Navigation = ({ state, setState }: Props) => {
           </li>
         ))}
       </ul>
-
       <div className={styles.logo}>
         <NavLink to="/" className={styles.link}>
           <img src={logoDark} alt="website-logo" />
         </NavLink>
       </div>
-
       <ul className={styles.navigation_list}>
         {RightNavigation.map((link) => (
           <li

@@ -7,7 +7,6 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <ButtonTopScroll />
-
         <Icons />
       </div>
     </footer>

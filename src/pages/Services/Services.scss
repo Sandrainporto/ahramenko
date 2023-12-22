@@ -1,9 +1,11 @@
 @import './../../shared/styles/helpers';
+
 .content {
   display: flex;
   flex-direction: column;
   gap: 6rem;
 }
+
 .info {
   text-align: center;
 }
@@ -11,6 +13,7 @@
 .title {
   margin-bottom: 3rem;
   text-align: center;
+
   @include media-tablet {
     margin-bottom: 1.5rem;
   }
@@ -19,6 +22,7 @@
 .about-conditions > div:first-child {
   padding: 4rem 3rem;
   background: #f8f2f0;
+
   @include media-tablet {
     padding: 2rem 0;
   }

@@ -1,4 +1,5 @@
 @import './../../shared/styles/helpers';
+
 .item {
   width: 300px;
   padding: 3rem 2rem;
@@ -7,12 +8,15 @@
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background: $color-background;
   border-radius: 15px;
+
   @media screen and (max-width: 1388.98px) {
     flex: 0 1 47%;
   }
+
   @include media-tablet {
     flex: 0 1 70%;
   }
+
   @include media-mobile {
     flex: 0 1 95%;
   }
@@ -23,8 +27,10 @@
   color: rgb(77, 77, 77);
   margin: 1.5rem 0;
 }
+
 .description {
   text-align: justify;
+
   @media screen and (max-width: 1388.98px) {
     text-align: center;
   }

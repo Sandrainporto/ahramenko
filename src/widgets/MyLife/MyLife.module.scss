@@ -7,14 +7,17 @@
   background: $color-background-add;
   padding: 0 4rem 9rem;
   text-align: center;
+
   @media screen and (max-width: 1360px) {
     flex-direction: column;
     align-items: center;
   }
+
   @include media-tablet {
     padding: 0 1.5rem 9rem;
   }
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -26,9 +29,11 @@
     max-width: 80%;
     padding: 7rem 0;
   }
+
   @media screen and (max-width: 768.98px) {
     max-width: 95%;
   }
+
   a {
     align-self: center;
     text-transform: none;
@@ -37,7 +42,12 @@
 
 .description {
   flex: 1 1 auto;
+  max-height: 500px;
+  overflow-y: scroll;
+  @extend %custom-scroll;
+  padding-right: 8px;
   margin-bottom: 9rem;
+
   @include media-mobile {
     text-align: justify;
   }

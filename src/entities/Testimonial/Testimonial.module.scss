@@ -7,10 +7,12 @@
   justify-content: center;
   gap: 15rem 7rem;
   margin: 5rem auto;
+
   @include media-tablet {
     margin-top: 9rem;
   }
 }
+
 .testimonial {
   padding: 1rem 1.5rem;
   width: 32rem;
@@ -21,6 +23,7 @@
   box-shadow:
     rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
   @include media-tablet {
     width: 95%;
   }
@@ -44,6 +47,7 @@
     border-radius: 50%;
   }
 }
+
 .message {
   position: relative;
   background: rgba(255, 255, 255, 0.562);
@@ -57,11 +61,13 @@
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 .author {
   font-family: 'Lobster', sans-serif;
   @include font($size: 2rem, $height: 2.6rem, $weight: 500);
   text-align: center;
 }
+
 .text {
   max-height: 14rem;
   overflow-y: scroll;

@@ -10,9 +10,11 @@
   grid-template-rows: repeat(3, 250px);
 
   justify-items: center;
+
   @include media-laptop-small {
     margin: 2rem 0 0 0;
   }
+
   @media screen and (max-width: 970.98px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 200px);
@@ -40,8 +42,6 @@
 }
 
 .image {
-  height: 100%;
-
   img {
     position: absolute;
     width: 100%;
@@ -50,6 +50,7 @@
     object-fit: cover;
   }
 }
+
 img:is(.moved) {
   object-position: center 30%;
 }
@@ -61,10 +62,12 @@ img:is(.moved) {
   transform: translate(-50%, -50%);
   color: $header-text;
   pointer-events: none;
+
   @media screen and (max-width: 444.98px) {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  @media screen and (max-width: 359.98px) {
+
+  @media screen and (max-width: 400.98px) {
     font-size: 1.6rem;
   }
 }

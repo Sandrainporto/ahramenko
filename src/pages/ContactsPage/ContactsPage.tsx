@@ -1,14 +1,26 @@
 import { MSection } from '../../shared/Layouts/Section/Section';
 import styles from './ContactsPage.module.scss';
-import background from './../../assets/content-images/slide-1.webp';
+import backgroundDesk from './../../assets/content-images/contacts-back-1500.webp';
+import backgroundTablet from './../../assets/content-images/contacts-back-730.webp';
+import backgroundMobile from './../../assets/content-images/contacts-back-400.webp';
 import Contacts from '../../widgets/Contacts/Contacts';
 import { motion } from 'framer-motion';
 import {
   textAnimationUpDown,
   imageAnimation,
 } from '../../shared/Animations/animations';
+import { useMediaQuery } from 'react-responsive';
 
 const ContactsPage = () => {
+  const isDesktop = useMediaQuery({
+    query: '(min-device-width: 1281px)',
+  });
+  const isTabletOrSmallLaptop = useMediaQuery({
+    query: '(min-device-width: 414px) and (max-width: 1280px)',
+  });
+  const isMobile = useMediaQuery({
+    query: '(max-width: 414px)',
+  });
   return (
     <>
       <MSection
@@ -23,7 +35,11 @@ const ContactsPage = () => {
             variants={imageAnimation}
             className={styles.image}
           >
-            <img src={background} alt="page-background" />
+            {isDesktop && <img src={backgroundDesk} alt="page-background" />}
+            {isTabletOrSmallLaptop && (
+              <img src={backgroundTablet} alt="page-background" />
+            )}{' '}
+            {isMobile && <img src={backgroundMobile} alt="page-background" />}
           </motion.div>
           <motion.div
             initial={'hidden'}
