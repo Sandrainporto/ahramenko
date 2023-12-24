@@ -8,7 +8,7 @@ const Messages = () => {
     <MSection
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ amount: 0.4, once: true }}
       classNames="messages"
     >
       <div className={styles.content}>
