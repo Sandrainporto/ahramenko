@@ -6,7 +6,6 @@ import { photoTypes } from './Data';
 const imageAnimationWithMove = {
   hidden: {
     y: -100,
-
     opacity: 0,
   },
   visible: (custom: number) => ({

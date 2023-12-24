@@ -15,7 +15,7 @@ const Testimonial = () => {
       <div className={styles.content}>
         {testimonials.map((testimonial, index) => (
           <motion.div
-            key={testimonial.author}
+            key={index}
             className={styles.testimonial}
             custom={index + 2 * 1}
             variants={tilesAnimation}
