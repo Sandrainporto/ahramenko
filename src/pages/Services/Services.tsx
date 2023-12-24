@@ -18,7 +18,7 @@ const Services = () => {
       >
         <div className="info">
           <motion.h2
-            custom={1}
+            custom={0.25}
             variants={textAnimationUpDown}
             className="heading"
           >
