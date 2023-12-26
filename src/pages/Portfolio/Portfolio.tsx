@@ -16,7 +16,7 @@ const Portfolio = () => {
       classNames="portfolio"
       initial={'hidden'}
       whileInView={'visible'}
-      viewport={{ amount: 0.2, once: true }}
+      viewport={{ once: true }}
     >
       <div className={styles.content}>
         <motion.h2
